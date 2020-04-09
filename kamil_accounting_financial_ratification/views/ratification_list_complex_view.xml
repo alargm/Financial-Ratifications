@@ -1,0 +1,55 @@
+<odoo>
+	<data>
+			
+		<record id="ratification_list_complext_form_view" model="ir.ui.view">
+			<field name="name">Ratification Complex Form Tree</field>
+			<field name="model">ratification.list.complex</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<div>
+							<h1>
+								<label for="name"/><br/>
+								<field name="name" required="1"/>	
+							</h1>
+						</div>
+
+						<group>
+							<field name="date" required="1"/>
+						</group>
+
+						<notebook>
+							<page string="Details">
+								<field name="ratification_list_ids">
+									<tree editable="bottom">
+										<field name="name" required="1"/>
+										<field name="partner_id" required="1" options="{'no_create':True}"/>
+									</tree>
+								</field>
+							</page>
+						</notebook>
+
+						<footer>
+							<button name='do_merg' string='Merg' type='object' class="oe_highlight"/>
+							<button string="Cancel" special="cancel"/>
+						</footer>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+
+		<record id="action_ratification_list_complex" model="ir.actions.act_window">
+			<field name="name">Ratification List Complex</field>
+			<field name="res_model">ratification.list.complex</field>
+			<field name="view_mode">form</field>
+			<field name="target">new</field>
+		</record>
+
+
+		<menuitem id="ratification_list_complex_menu" name="Ratification List Complex" parent="ratification_main_menu" sequence="2" action="action_ratification_list_complex"/>
+
+
+
+	</data>
+</odoo>

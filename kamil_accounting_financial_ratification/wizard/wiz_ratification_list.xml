@@ -1,0 +1,23 @@
+<odoo>
+	<data>
+		<record id="wizard_ratification_list_form" model="ir.ui.view">
+			<field name='name'>Ratification List Report</field>
+			<field name='model'>wizard.ratification.list</field>
+			<field name='arch' type='xml'>
+				<form>
+					<sheet>
+						<group>
+							<field name="list_type" widget="radio" options="{'horizontal':True}"/>
+							<field name="for_bank_or_cash" widget="radio" options="{'horizontal':True}"/>
+						</group>
+						<footer>
+							<button name='get_report' string='Print' type='object' class="oe_highlight"/>
+							<button string="Cancel" special="cancel"/>
+						</footer>
+					</sheet>
+				</form>
+			</field>
+		</record>
+	</data>
+</odoo>
+

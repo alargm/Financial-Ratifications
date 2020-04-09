@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+
+	<report 
+		id="bank_transfer_report_for_partner"
+		model="ratification.payment"
+		string="Bank Transfer For Partner Report"
+		report_type="qweb-html"
+		name="kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template"
+	/>
+
+
+	<template id="report_bank_trnasfer_for_partner_template">
+		<t t-call="web.html_container">
+			<t t-foreach="docs" t-as="o">
+				<t t-call="web.external_layout">
+					<div class="page">
+						<t t-if="o.payment_type == 'bank_transfer'">
+
+							<p class="text-right">
+								<strong style="float:right"> التاريخ </strong>
+								<span style="float:right;margin-right:20px" t-esc="o.date"></span>
+							</p>
+							<br/>
+							<p class="text-right">
+								<strong style="float:right"> السيد مدير  </strong>
+
+								<t t-if="o.journal_id.full_name">
+									<span style="float:right;margin-right:20px" t-esc="o.journal_id.full_name"></span>	
+								</t>
+								<t t-if="not o.journal_id.full_name">
+									<span style="float:right;margin-right:20px" t-esc="o.journal_id.name"></span>	
+								</t>
+							</p>
+							<br/>
+							<p class="text-center">
+								السلام عليكم ورحمة الله 
+							</p>
+
+							<br/>
+							<br/>
+							<p class="text-center">
+								<strong class="text-center">
+									<u>
+										الموضوع/تحويل من حسابنا طرفكم
+									</u>
+								</strong>
+							</p>
+
+							<strong style="float:right">
+							
+							باﻹشارة للموضوع اعلاه نرجو شاكرين التكرم بتحويل مبلغ  <t t-esc="'{0:,.2f}'.format(float(o.net_amount))"/>   ( <t t-esc="o.net_amount_in_words"/> ) من حسابنا طرفكم بالرقم ( <t t-esc="o.account_number"/> ) الى الجهة المذكورة ادناه
+<!-- 
+							<t t-if="not o.ratification_id.ratification_list_id">
+								ادناه:
+							</t> -->
+<!-- 
+							<t t-if="o.ratification_id.ratification_list_id">
+								حسب الكشف المرفق
+							</t> -->
+							
+							</strong>
+							<br/>
+							<br/>
+							<br/>
+
+
+						<t t-if="o.ratification_id.ratification_list_id.is_complex">
+							<table border="1" class="text-right table table-bordered">
+								<thead>
+									<th>م.</th>
+									<th>اسم المستفيد</th>
+									<th>اسم البنك</th>
+									<th>الفرع</th>
+									<th>رقم الحساب</th>
+									<th>المبلغ</th>
+								</thead>
+								<tbody>
+
+									<t t-set="count" t-value="1"/>
+									<t t-set="total" t-value="0"/>
+
+
+									<t t-foreach="o.ratification_id.ratification_list_id.partners_net_ids" t-as="partner_line">
+										<tr>
+											<td>
+												<t t-esc="count"/>
+												<t t-set="count" t-value="count + 1"/>
+											</td>
+											<td> 
+												<t t-esc="partner_line.partner_id.name"/>
+											</td>
+											<td>
+												<t t-esc="partner_line.partner_id.bank_name"/>
+											</td>
+											<td>
+												<t t-esc="partner_line.partner_id.bank_branch_name"/>
+											</td>
+											<td>
+												<t t-esc="partner_line.partner_id.account_number"/>
+											</td>
+											<td>
+												<t t-esc="'{0:,.2f}'.format(float(partner_line.net_amount))"/> 
+												<t t-set="total" t-value="total + partner_line.net_amount"/>
+											</td>
+										</tr>
+									</t>
+									<tr>
+										<td colspan="5">
+											<strong>
+												الإجمالي
+											</strong>
+										</td>
+										<td>
+											<t t-esc="'{0:,.2f}'.format(float(total))"/> 
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</t>
+
+
+						<table border="1" class="text-right table table-bordered">
+							<thead>
+								<th>م.</th>
+								<th>اسم المستفيد</th>
+								<th>اسم البنك</th>
+								<th>الفرع</th>
+								<th>رقم الحساب</th>
+								<th>المبلغ</th>
+							</thead>
+							<tbody>
+							
+								<tr>
+									<td>1</td>
+									<td> 
+										<t t-esc="o.partner_id.name"/>
+									</td>
+									<td>
+										<t t-esc="o.partner_id.bank_name"/>
+									</td>
+									<td>
+										<t t-esc="o.partner_id.bank_branch_name"/>
+									</td>
+									<td>
+										<t t-esc="o.partner_id.account_number"/>
+									</td>
+									<td>
+										<t t-esc="'{0:,.2f}'.format(float(o.net_amount))"/> 
+									</td>
+								</tr>
+								
+							</tbody>
+						</table>
+					
+
+
+
+
+							<p class="text-right">
+								<strong style="float:right"> 
+									<t t-if="o.deduct_commission == 'account'">
+										مع مراعاة خصم العمولة من الحساب
+									</t>
+									<t t-if="o.deduct_commission == 'amount'">
+										مع مراعاة خصم العمولة من المبلغ
+									</t>
+								</strong>
+							</p>
+
+							<br/><br/><br/><br/>
+							<div>
+								<table class="text-right table table-condensed table-hover">
+									<tr>
+										<td>
+											<strong style="float:right"> توقيع اول </strong>
+											<span style="float:right;margin-right:20px">
+												................................................................................
+											</span>
+										</td>
+										<td>
+											<strong style="float:right"> توقيع ثاني </strong>
+											<span style="float:right;margin-right:20px">
+												................................................................................
+											</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+
+
+								
+
+
+						</t>
+
+					</div>
+				</t>
+			</t>
+		</t>
+	</template>
+
+
+
+</odoo>
+
+
+

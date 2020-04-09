@@ -1,0 +1,147 @@
+<odoo>
+	<data>
+	
+		<record id="ratification_ratification_multi_company_rule" model="ir.rule">
+			<field name="name">Ratification multi-company</field>
+			<field ref="model_ratification_ratification" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+		<record id="ratification_list_multi_company_rule" model="ir.rule">
+			<field name="name">Ratification List multi-company</field>
+			<field ref="model_ratification_list" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+
+		<record id="ratification_line_multi_company_rule" model="ir.rule">
+			<field name="name">Ratification line multi-company</field>
+			<field ref="model_ratification_line" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+
+		<record id="ratification_line_tax_line_multi_company_rule" model="ir.rule">
+			<field name="name">Ratification line tax line multi-company</field>
+			<field ref="model_ratification_line_tax_line" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+		
+
+		<record id="ratification_line_level" model="ir.rule">
+			<field name="name">Ratification line level multi-company</field>
+			<field ref="model_ratification_line_level" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+	
+
+		<record id="ratification_line_tag" model="ir.rule">
+			<field name="name">Ratification line tag multi-company</field>
+			<field ref="model_ratification_line_tag" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+		
+
+		<record id="account_analytic_tag" model="ir.rule">
+			<field name="name">account.analytic.tag multi-company</field>
+			<field ref="analytic.model_account_analytic_tag" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+		
+
+		<record id="ratification_tax_line" model="ir.rule">
+			<field name="name">ratification.tax.line multi-company</field>
+			<field ref="model_ratification_tax_line" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+		<record id="ratification_prepaid_expenses" model="ir.rule">
+			<field name="name">ratification.prepaid.expenses multi-company</field>
+			<field ref="model_ratification_prepaid_expenses" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+	
+		<record id="ratification_installment" model="ir.rule">
+			<field name="name">ratification.installment multi-company</field>
+			<field ref="model_ratification_installment" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+		<record id="ratification_loan_line" model="ir.rule">
+			<field name="name">ratification.loan.line multi-company</field>
+			<field ref="model_ratification_loan_line" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+
+		<record id="ratification_list_line" model="ir.rule">
+			<field name="name">ratification.list.line multi-company</field>
+			<field ref="model_ratification_list_line" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+
+		<record id="petty_cash_clearance" model="ir.rule">
+			<field name="name">ratification.petty.cash.clearance multi-company</field>
+			<field ref="model_ratification_petty_cash_clearance" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+
+		<record id="petty_cash_clearance_line" model="ir.rule">
+			<field name="name">ratification.petty.cash.clearance.line multi-company</field>
+			<field ref="model_ratification_petty_cash_clearance_line" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+		<record id="ratification_payment" model="ir.rule">
+			<field name="name">ratification.payment multi-company</field>
+			<field ref="model_ratification_payment" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+		<record id="payment_ratification_line" model="ir.rule">
+			<field name="name">payment_ratification_line multi-company</field>
+			<field ref="model_payment_ratification_line" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+
+		<record id="payment_ratification_tax_line" model="ir.rule">
+			<field name="name">payment_ratification_tax_line multi-company</field>
+			<field ref="model_payment_ratification_tax_line" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+		<record id="payment_ratification_loan_line" model="ir.rule">
+			<field name="name">payment_ratification_loan_line multi-company</field>
+			<field ref="model_payment_ratification_loan_line" name="model_id"/>
+			<field eval="True" name="global"/>
+			<field name="domain_force">['|',('company_id','=',False),('company_id','child_of',[user.company_id.id])]</field>
+		</record>
+
+
+
+
+
+	
+	
+	</data>
+</odoo>

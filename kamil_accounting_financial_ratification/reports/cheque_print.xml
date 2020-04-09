@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+
+	<report 
+		id="cheque_print_report"
+		model="ratification.payment"
+		string="Print Cheque"
+		report_type="qweb-pdf"
+		name="kamil_accounting_financial_ratification.checque_print_template"
+		paperformat="kamil_accounting_financial_ratification.cheque_paperformat"
+
+	/>
+
+	<template id="checque_print_template">
+		<t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+
+                    <div style="position: absolute; left: 86%; top: 39%;">
+                        <span style="float:right;">  <b><t t-esc="o.date"/></b> </span>
+                    </div>
+
+                    <div style="position: absolute; left: 50%; top: 37%; float:right; width:480px;" dir="rtl">
+                        <br/><br/>
+                        <span style="float:right;">
+                            <b><t style="float:right;  margin-right:100px;" t-esc="o.partner_id.name"/> . </b> </span>
+                        <br/><br/>
+                       <span style="float:right;"> <b> <t style="float:left;" t-esc="o.net_amount_in_words"/>. </b>  </span>
+                    </div>
+
+                    <div style="position: absolute; left: 84%; top: 37%;" dir="rtl">
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <b> <t t-esc="'{0:,.2f}'.format(float(o.net_amount))"/> </b>
+                    </div>
+
+
+            	</t>
+       		</t>
+		
+
+<!-- In the Server
+<?xml version="1.0"?>
+<t t-name="kamil_accounting_financial_ratification.checque_print_template">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+
+                    <div style="position: absolute; left: 86%; top: 39%;">
+                        <span style="float:right;">  <b><t t-esc="o.date"/></b> </span>
+                    </div>
+
+                    <div style="position: absolute; left: 50%; top: 37%; float:right; width:480px;">
+                        <br/><br/>
+                        <span style="float:right;">
+                            <b><t style="float:right;  margin-right:100px;" t-esc="o.partner_id.name"/> . </b> </span>
+                        <br/><br/>
+                       <span style="float:right;"> <b> <t style="float:left;" t-esc="o.net_amount_in_words"/>. </b>  </span>
+                    </div>
+
+                    <div style="position: absolute; left: 84%; top: 37%;">
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <br/><br/>
+                        <b> <t t-esc="'{0:,.2f}'.format(float(o.net_amount))"/> </b>
+                    </div>
+
+
+            </t>
+        </t>
+    </t>
+
+
+
+ -->
+		
+	</template>
+
+</odoo>

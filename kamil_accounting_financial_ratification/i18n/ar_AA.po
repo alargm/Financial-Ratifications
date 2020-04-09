@@ -1,0 +1,2867 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* kamil_accounting_financial_ratification
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-02 12:56+0000\n"
+"PO-Revision-Date: 2020-04-02 12:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:569
+#, python-format
+msgid " Has Loans"
+msgstr "لديه سلفيات"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid ") الى الجهات المذكورة حسب الكشف المرفق"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+msgid ") الى الجهة المذكورة ادناه"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid ") بالشيك رقم"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_one_percent_template
+msgid ") بتاريخ"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid ") من حسابنا طرفكم بالرقم ("
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "-\n"
+"												رقم الإذن \n"
+"												-"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "-\n"
+"												رقم التحويل -"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "-\n"
+"												رقم الشيك -"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b class=\"text-right\">\n"
+"                    					البند\n"
+"                    				</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b class=\"text-right\">\n"
+"                    				القيمة الصافية\n"
+"                    			</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b class=\"text-right\">\n"
+"                    				المبلغ\n"
+"                    			</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b class=\"text-right\">\n"
+"                    				قيمة الخصم\n"
+"                    			</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b class=\"text-right\"> الجهة </b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b class=\"text-right\"> الرقم </b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b class=\"text-right\">إسم البنك</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b class=\"text-right\">إسم الفرع</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b class=\"text-right\">رقم حساب البنك</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<b style=\"font-family: 'Times New Roman', Times, serif;\">\n"
+"							تصديق مالي\n"
+"							</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "<b style=\"font-size:25px;\">\n"
+"										نموذج إذن صرف خزنة \n"
+"									</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+msgid "<b>\n"
+"									<u>\n"
+"										إقرار إستلام عهدة\n"
+"									</u>\n"
+"								</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<b> البيان </b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<b> الحساب </b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<b> الرقم </b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<b> المبلغ </b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<b>إسم البند</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b>التوقيع</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<b>الرقم</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<b>المبلغ</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b>المسير</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<b>اﻹجمالي</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<b>خصماً على</b>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "<span style=\"font-size:25px;\">\n"
+"										نموذج إذن صرف (17)\n"
+"									</span>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "<strong class=\"text-center\">\n"
+"									<u>\n"
+"										الموضوع/تحويل من حسابنا طرفكم\n"
+"									</u>\n"
+"								</strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_one_percent_template
+msgid "<strong class=\"text-center\">\n"
+"								<u>\n"
+"									الموضوع/ضريبة الـ1%\n"
+"								</u>\n"
+"							</strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "<strong style=\"float:right\">\n"
+"					عبارة عن : \n"
+"					</strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+msgid "<strong style=\"float:right\">  \n"
+"								عبارة عن\n"
+"							</strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+msgid "<strong style=\"float:right\">  \n"
+"								على ان تتم التصفية بعد تنفيذ الغرض منها في مدة لا تتجاوز شهر من تاريخ الاستلام\n"
+"							</strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+msgid "<strong style=\"float:right\">  الإدارة </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+msgid "<strong style=\"float:right\"> الاسم </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<strong style=\"float:right\"> البيان </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_one_percent_template
+msgid "<strong style=\"float:right\"> التاريخ </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+msgid "<strong style=\"float:right\"> التاريخ </strong>\n"
+"									<span style=\"float:right;margin-right:20px\">.........................................</span>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_one_percent_template
+msgid "<strong style=\"float:right\"> السادة/ </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<strong style=\"float:right\"> السنة المالية </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "<strong style=\"float:right\"> السيد مدير  </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<strong style=\"float:right\"> المبلغ المستحق الدفع </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<strong style=\"float:right\"> المدفوع له </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_one_percent_template
+msgid "<strong style=\"float:right\"> المدير المالي </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "<strong style=\"float:right\"> المستلم </strong>\n"
+"									<span style=\"float:right;margin-right:20px\">\n"
+"										................................................................................\n"
+"									</span>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+msgid "<strong style=\"float:right\"> بتاريخ  </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<strong style=\"float:right\"> تاريخ التصديق </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "<strong style=\"float:right\"> تاريخ الدفعية </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+msgid "<strong style=\"float:right\"> توقيع المستلم </strong>\n"
+"									<span style=\"float:right;margin-right:20px\">.........................................</span>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "<strong style=\"float:right\"> توقيع اول </strong>\n"
+"											<span style=\"float:right;margin-right:20px\">\n"
+"												................................................................................\n"
+"											</span>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "<strong style=\"float:right\"> توقيع اول </strong>\n"
+"									<span style=\"float:right;margin-right:20px\">\n"
+"										................................................................................\n"
+"									</span>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "<strong style=\"float:right\"> توقيع ثاني </strong>\n"
+"											<span style=\"float:right;margin-right:20px\">\n"
+"												................................................................................\n"
+"											</span>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "<strong style=\"float:right\"> توقيع ثاني </strong>\n"
+"									<span style=\"float:right;margin-right:20px\">\n"
+"										................................................................................\n"
+"									</span>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "<strong style=\"float:right\"> رقم البطاقة </strong>\n"
+"									<span style=\"float:right;margin-right:20px\">\n"
+"										................................................................................\n"
+"									</span>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<strong style=\"float:right\"> رقم التصديق </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "<strong style=\"float:right\"> رقم الدفعية </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "<strong style=\"float:right\"> عبارة عن: </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "<strong style=\"float:right\"> لحساب </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+msgid "<strong style=\"float:right\"> مستخرج بشيك او اذن رقم </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "<strong style=\"float:right\">إعداد </strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "<strong>\n"
+"												الإجمالي\n"
+"											</strong>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__access_warning
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__access_warning
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__access_warning
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__access_warning
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__access_warning
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__access_warning
+msgid "Access warning"
+msgstr "خطأ بالوصول"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line__account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_report_line__account_id
+msgid "Account"
+msgstr "الحساب"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__account_code
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__account_code
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__account_code
+msgid "Account Code"
+msgstr "كود الحساب"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__account_number
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__account_number
+msgid "Account Number"
+msgstr "رقم الحساب"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:payment.ratification.line,accounts_payable_types:0
+#: selection:payment.ratification.line,ratification_type:0
+#: selection:ratification.line,accounts_payable_types:0
+#: selection:ratification.line,ratification_type:0
+#: selection:ratification.line,the_type:0
+#: selection:ratification.list.line,ratification_type:0
+msgid "Accounts Payable"
+msgstr "الحسابات الدائنة "
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "Accounts Payable Sub Group"
+msgstr "مجموعة الحسابات الدائنة الفرعية"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:payment.ratification.line,accounts_receivable_types:0
+#: selection:payment.ratification.line,ratification_type:0
+#: selection:ratification.line,accounts_receivable_types:0
+#: selection:ratification.line,ratification_type:0
+#: selection:ratification.line,the_type:0
+#: selection:ratification.list.line,ratification_type:0
+msgid "Accounts Receivable"
+msgstr "الحسابات المدينة"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "Accounts Receivable Sub Group"
+msgstr "مجموعة الحسابات المدينة الفرعية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_needaction
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_needaction
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_needaction
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_needaction
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_needaction
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_needaction
+msgid "Action Needed"
+msgstr "الإجراء المطلوب"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__activity_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__activity_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__activity_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__activity_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__activity_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__activity_ids
+msgid "Activities"
+msgstr "الأنشطة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__activity_state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__activity_state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__activity_state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__activity_state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__activity_state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__is_add_loan
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__is_add_loan
+msgid "Add Loan ?"
+msgstr "إضافة السلفية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__added_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__added_amount
+msgid "Added Amount"
+msgstr "المبلغ المضاف"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_account_journal__update_posted
+msgid "Allow Cancelling Entries"
+msgstr "السماح بإلغاء القيود"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_deduction_line__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_partner_net__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_report_line__amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__amount
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.petty_cash_clearance_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.petty_cash_clearance_tree_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_deduction_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__amount_in_words
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__amount_in_words
+msgid "Amount In Words"
+msgstr "المبلغ بالاحرف"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line__analytic_account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_report_line__analytic_account_id
+msgid "Analytic Account"
+msgstr "الحساب التحليلي"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_account_analytic_tag
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__analytic_tag_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__analytic_tag_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__analytic_tag_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__analytic_tag_ids
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+msgid "Analytic Tags"
+msgstr "الوسوم التحليلية"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,prepaid_expenses_payment_term:0
+#: selection:ratification.ratification,service_provider_loan_payment_term:0
+msgid "Annual"
+msgstr "سنوي"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+msgid "Approve"
+msgstr "موافقه"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,state:0
+msgid "Approved"
+msgstr "موافقه"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__approved_value
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__approved_value
+msgid "Approved Value"
+msgstr "المبلغ المعتمد"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_attachment_count
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_attachment_count
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_attachment_count
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_attachment_count
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_attachment_count
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+msgid "Audit"
+msgstr "مراجعة"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.payment,state:0
+msgid "Audited"
+msgstr "تمت المراجعة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__available_balance
+msgid "Available Balance"
+msgstr "الرصيد المتاح"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:res.partner,is_bank:0
+#: selection:wizard.ratification.list,for_bank_or_cash:0
+msgid "Bank"
+msgstr "بنك"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.payment,payment_type:0
+#: selection:ratification.ratification,payment_type:0
+msgid "Bank Transfer"
+msgstr "تحويل بنكي"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.report,name:kamil_accounting_financial_ratification.bank_transfer_report_for_partner
+msgid "Bank Transfer For Partner Report"
+msgstr "طباعة خطاب البنك للجهة المذكورة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.report,name:kamil_accounting_financial_ratification.bank_transfer_report
+msgid "Bank Transfer as List Report"
+msgstr "طباعة خطاب البنك حسب الكشف المرفق"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__journal_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__journal_id
+msgid "Bank/Cash"
+msgstr "البنك/الخزينة"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.petty_cash_clearance_form_view
+msgid "Bank/Cash Money Supply"
+msgstr "تغذية بنك/خزينة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_money_supply
+msgid "Bank/Save Supply"
+msgstr "تغذية بنك/خزينة"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,prepaid_expenses_payment_term:0
+#: selection:ratification.ratification,service_provider_loan_payment_term:0
+msgid "Biannual"
+msgstr "نصف سنوي"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__parent_branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__payment_branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__branch_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__state_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__branch_id
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_search_view
+msgid "Branch"
+msgstr "الفرع"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.line,the_type:0
+msgid "Budget"
+msgstr "الموازنة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__analytic_account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__analytic_account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__analytic_account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__analytic_account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__analytic_account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__analytic_account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__prepaid_expenses_budget_item_id
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "Budget Item"
+msgstr "البند"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.petty_cash_clearance_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.prepaid_expenses_installments_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_complext_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.wizard_ratification_list_form
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.list,state:0
+#: selection:ratification.payment,state:0
+#: selection:ratification.petty.cash.clearance,state:0
+#: selection:ratification.ratification,state:0
+msgid "Canceled"
+msgstr "تم الإلغاء"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.prepaid.expenses,state_id:0
+msgid "Cancelled"
+msgstr "تم اﻹلغاء"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.payment,payment_type:0
+#: selection:ratification.ratification,payment_type:0
+msgid "Cash"
+msgstr "نقد"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:res.partner,is_bank:0
+msgid "Cashier"
+msgstr "صراف"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_account_journal__update_posted
+msgid "Check this box if you want to allow the cancellation the entries related to this journal or of the invoice related to this journal"
+msgstr "حدد هذا المربع إذا كنت تريد السماح بإلغاء البنود المتعلقة بدفتر اليومية هذا أو الفواتير المرتبطة به"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.payment,payment_type:0
+#: selection:ratification.ratification,payment_type:0
+msgid "Cheque"
+msgstr "شيك"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__check_number
+msgid "Cheque Number"
+msgstr "رقم الشيك"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+msgid "Cheque Number/Payment Receipt Number"
+msgstr "رقم الشيك/رقم الإذن"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.petty_cash_clearance_form_view
+msgid "Clear"
+msgstr "تصفية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__clearance_id
+msgid "Clearance"
+msgstr "التصفية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__journal_id
+msgid "Clearance Bank/Cash"
+msgstr "بنك/خزينة التصفية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__clearance_date
+msgid "Clearance Date"
+msgstr "تاريخ التصفية"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.petty.cash.clearance,state:0
+msgid "Cleared"
+msgstr "تمت التصفية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_account_analytic_tag__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_level__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__company_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__company_id
+msgid "Company"
+msgstr "المؤسسة"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+msgid "Confirm"
+msgstr "تأكيد"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.list,state:0
+#: selection:ratification.payment,state:0
+msgid "Confirmed"
+msgstr "تم التاكيد"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__cost_center_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__cost_center_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__cost_center_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__cost_center_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__cost_center_id
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "Cost Center"
+msgstr "مركز التكلفة"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.payment,payment_type:0
+#: selection:ratification.ratification,payment_type:0
+msgid "Counter Cheque"
+msgstr "شيك مصرفي"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_deduction_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_level__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__x_create_user_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_complex__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line_deduction__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_partner_net__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__x_create_user_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_report_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_payment_cancel__create_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_ratification_list__create_uid
+msgid "Created by"
+msgstr "أنشئ بواسطة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_deduction_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_level__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_complex__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line_deduction__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_partner_net__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_report_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_payment_cancel__create_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_ratification_list__create_date
+msgid "Created on"
+msgstr "أنشئ في"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line__credit_amount
+msgid "Credit Amount"
+msgstr "القيمة الدائنة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__currency_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__currency_id
+msgid "Currency"
+msgstr "العملة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_installment__access_url
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_list__access_url
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_payment__access_url
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__access_url
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__access_url
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_ratification__access_url
+msgid "Customer Portal URL"
+msgstr "رابط بوابة العملاء"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_complex__date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__date
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.prepaid_expenses_installment_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_loan_installment_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "Date"
+msgstr "التاريخ"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line__debit_amount
+msgid "Debit Amount"
+msgstr "القيمة المدينة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__deduct_commission
+msgid "Deduct Commission From"
+msgstr "خصم العمولة من"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_deduction_line__tax_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction__tax_id
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+msgid "Deduction"
+msgstr "الخصم"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__deduction_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__deduction_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__deduction_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_partner_net__deduction_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__deduction_amount
+msgid "Deduction Amount"
+msgstr "قيمة الخصم"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__deduction_line_ids
+msgid "Deduction Line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__deduction_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__deduction_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__deduction_ids
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+msgid "Deductions"
+msgstr "الخصومات"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_level__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_complex__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__name
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+msgid "Description"
+msgstr "الوصف"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.petty_cash_clearance_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_complext_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+msgid "Details"
+msgstr "التفاصيل"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/petty_cash_clearance.py:115
+#, python-format
+msgid "Details Can not be Bigger than Petty Cash Amount"
+msgstr "المبلغ في التفاصيل لا يمكن ان يكون اكبر من قيمة العهدة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_deduction_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_level__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_complex__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line_deduction__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_partner_net__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_report_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_report_kamil_accounting_financial_ratification_list_template__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_payment_cancel__display_name
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_ratification_list__display_name
+msgid "Display Name"
+msgstr "اسم العرض"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.cancel_payment_wizard_view
+msgid "Do Cancel"
+msgstr "إلغاء المعاملة"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.prepaid_expenses_installments_form_view
+msgid "Do Transfer"
+msgstr "تحويل"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:482
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:484
+#, python-format
+msgid "Do the Transfer Operation"
+msgstr "عمل عملية التحويل"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_account_move__document_number
+msgid "Document Number"
+msgstr "رقم المستند"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.list,state:0
+#: selection:ratification.payment,state:0
+#: selection:ratification.petty.cash.clearance,state:0
+#: selection:ratification.ratification,state:0
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__due_date
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__partner_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,ratification_type:0
+msgid "Employee Loan"
+msgstr "سلفية موظف"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "Financial Account"
+msgstr "الحساب المالي"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__financial_year
+msgid "Financial Year"
+msgstr "السنة المالية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_follower_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_follower_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_follower_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_follower_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_follower_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_follower_ids
+msgid "Followers"
+msgstr "المتابعون"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_channel_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_channel_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_channel_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_channel_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_channel_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_channel_ids
+msgid "Followers (Channels)"
+msgstr "المتابعون (القنوات)"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_partner_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_partner_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_partner_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_partner_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_partner_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "المتابعون (الشركاء)"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_ratification_list__for_bank_or_cash
+msgid "For Bank or Cash"
+msgstr "مسير لبنك ام خزينة ؟"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__for_items
+msgid "For Items"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: selection:wizard.ratification.list,for_bank_or_cash:0
+msgid "For Save"
+msgstr "خزينة"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.prepaid_expenses_installment_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_loan_installment_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "Group By"
+msgstr "تجميع حسب"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__has_loan
+msgid "Has Loan"
+msgstr "لديه سلفية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__has_petty_cash
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__has_petty_cash
+msgid "Has Petty Cash"
+msgstr "لديه عهدة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__has_prepaid
+msgid "Has Prepaid"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_deduction_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_level__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_complex__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line_deduction__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_partner_net__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_report_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_report_kamil_accounting_financial_ratification_list_template__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_payment_cancel__id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_ratification_list__id
+msgid "ID"
+msgstr "المعرف"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_installment__message_unread
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_list__message_unread
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_payment__message_unread
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_unread
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_unread
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_ratification__message_unread
+msgid "If checked new messages require your attention."
+msgstr "إذا حددته، سيتم إخطارك بالرسائل الجديدة."
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_installment__message_needaction
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_list__message_needaction
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_payment__message_needaction
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_needaction
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_needaction
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_ratification__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "إذا حددته، سيتم إخطارك بالرسائل الجديدة."
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_installment__message_has_error
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_list__message_has_error
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_payment__message_has_error
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_has_error
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_has_error
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_ratification__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "إذا تم تحديده ، فإن بعض الرسائل بها خطأ في التسليم."
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__installment_ids
+msgid "Installment"
+msgstr "قسط"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+msgid "Installment Details"
+msgstr "تفاصيل الاقساط"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_res_partner__is_bank
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_res_users__is_bank
+msgid "Is Bank/Cashier"
+msgstr "هل هو صراف/بنك"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__is_complex
+msgid "Is Complex"
+msgstr "هل هو مسير مُدمج ؟"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_is_follower
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_is_follower
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_is_follower
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_is_follower
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_is_follower
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_is_follower
+msgid "Is Follower"
+msgstr "متابع"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__is_paid
+msgid "Is Paid ?"
+msgstr "مدفوع ؟"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__is_petty_cash_cleared
+msgid "Is Petty Cash Cleared"
+msgstr "هل تم تصفية العهدة ؟"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__is_transfered
+msgid "Is Transfered ?"
+msgstr "تم التحويل ؟"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__item_type
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__item_type
+msgid "Item Type"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_account_journal
+msgid "Journal"
+msgstr "دفتر اليومية"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.petty_cash_clearance_form_view
+msgid "Journal Enteries"
+msgstr "قيود اليومية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_account_move
+msgid "Journal Entries"
+msgstr "قيود اليومية"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:payment.ratification.line,item_type:0
+#: selection:ratification.line,item_type:0
+msgid "Labs"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_deduction_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_level____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_complex____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line_deduction____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_partner_net____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_report_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_report_kamil_accounting_financial_ratification_list_template____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_payment_cancel____last_update
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_ratification_list____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_deduction_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_level__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_complex__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line_deduction__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_partner_net__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_report_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_payment_cancel__write_uid
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_ratification_list__write_uid
+msgid "Last Updated by"
+msgstr "آخر تحديث بواسطة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_deduction_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_report_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_level__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_complex__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line_deduction__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_partner_net__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_report_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_payment_cancel__write_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_ratification_list__write_date
+msgid "Last Updated on"
+msgstr "آخر تحديث في"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__level_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__level_id
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "Level"
+msgstr "المستوى"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.line,service_levels:0
+msgid "Level One"
+msgstr "المستوى الاول"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.line,service_levels:0
+msgid "Level Three"
+msgstr "المستوى الثالث"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.line,service_levels:0
+msgid "Level Two"
+msgstr "المستوى الثاني"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_deduction_line__line_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__line_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__line_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line_deduction__line_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line_deduction__line_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__line_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__line_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__line_ids
+msgid "Line"
+msgstr "بند"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__line_has_loan
+msgid "Line Has Loan"
+msgstr "لديه قرض"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_ratification_list__list_type
+msgid "List Type"
+msgstr "إختر النوع"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__loan_ids
+msgid "Loan"
+msgstr "سلفية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__loan_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__loan_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__service_provider_loan_amount
+msgid "Loan Amount"
+msgstr "قيمة السلفية"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:740
+#, python-format
+msgid "Loan Amount can not be bigger than total amount"
+msgstr "قيمة السلفية لا يمكن ان تكون اكبر من القيمة الكلية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__loan_date
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__loan_date
+msgid "Loan Date"
+msgstr "تاريخ السلفية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__loan_line_ids
+msgid "Loan Line"
+msgstr "خط السلفية"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+msgid "Loans"
+msgstr "السلفيات"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__total_loan_amount_in_words
+msgid "Loans Amount in Words"
+msgstr "قيمة السلفيات بالاحرف"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_main_attachment_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_main_attachment_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_main_attachment_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_main_attachment_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_main_attachment_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "المرفق الرئيسي"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:payment.ratification.line,item_type:0
+#: selection:ratification.line,item_type:0
+msgid "Medicine"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_complext_form_view
+msgid "Merg"
+msgstr "دمج"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_has_error
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_has_error
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_has_error
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_has_error
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_has_error
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_has_error
+msgid "Message Delivery error"
+msgstr "خطأ في تسليم الرسائل"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_ids
+msgid "Messages"
+msgstr "الرسائل"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,prepaid_expenses_payment_term:0
+#: selection:ratification.ratification,service_provider_loan_payment_term:0
+msgid "Monthly"
+msgstr "شهري"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__net_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__net_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_partner_net__net_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__net_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__net_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance_line__net_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__net_amount
+msgid "Net Amount"
+msgstr "القيمة الصافية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__net_amount_in_words
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__net_amount_in_words
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__net_amount_in_words
+msgid "Net Amount In Words"
+msgstr "القيمة الصافية بالاحرف"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__activity_date_deadline
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__activity_date_deadline
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__activity_date_deadline
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__activity_date_deadline
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__activity_date_deadline
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "الموعد النهائي للنشاط القادم"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__activity_summary
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__activity_summary
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__activity_summary
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__activity_summary
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__activity_summary
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__activity_summary
+msgid "Next Activity Summary"
+msgstr "ملخص النشاط القادم"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__activity_type_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__activity_type_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__activity_type_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__activity_type_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__activity_type_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع النشاط التالي"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.prepaid.expenses,state_id:0
+msgid "Not Transfered"
+msgstr "لم تحول"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_needaction_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_needaction_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_needaction_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_needaction_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_needaction_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_needaction_counter
+msgid "Number of Actions"
+msgstr "عدد الإجراءات"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__number_of_installment
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__prepaid_expenses_number_of_installment
+msgid "Number of Installments"
+msgstr "عدد الاقساط"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_has_error_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_has_error_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_has_error_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_has_error_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_has_error_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_has_error_counter
+msgid "Number of error"
+msgstr "عدد الاخطاء"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_installment__message_needaction_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_list__message_needaction_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_payment__message_needaction_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_needaction_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_needaction_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_ratification__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "عدد الرسائل التي تتطلب اجراء"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_installment__message_has_error_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_list__message_has_error_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_payment__message_has_error_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_has_error_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_has_error_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_ratification__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "عدد الرسائل مع خطأ في التسليم"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_installment__message_unread_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_list__message_unread_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_payment__message_unread_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_unread_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_unread_counter
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_ratification__message_unread_counter
+msgid "Number of unread messages"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.report,name:kamil_accounting_financial_ratification.one_percent_tax_report
+msgid "One Percent Report"
+msgstr "ضريبة الـ1%"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:payment.ratification.line,item_type:0
+#: selection:ratification.line,item_type:0
+#: selection:ratification.ratification,ratification_type:0
+msgid "Other"
+msgstr "اخرى"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__other_deduction_ids
+msgid "Other Deduction"
+msgstr "خصومات اخرى"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+msgid "Other Deductions"
+msgstr "خصومات اخرى"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.installment,activity_state:0
+#: selection:ratification.list,activity_state:0
+#: selection:ratification.payment,activity_state:0
+#: selection:ratification.petty.cash.clearance,activity_state:0
+#: selection:ratification.prepaid.expenses,activity_state:0
+#: selection:ratification.ratification,activity_state:0
+msgid "Overdue"
+msgstr "متأخرة"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,state:0
+msgid "Paid"
+msgstr "مدفوع"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__partner_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__partner_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__partner_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__partner_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_partner_net__partner_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__partner_id
+msgid "Partner"
+msgstr "الجهة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__partner_is_bank
+msgid "Partner Is Bank"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.act_window,name:kamil_accounting_financial_ratification.action_partners
+#: model:ir.ui.menu,name:kamil_accounting_financial_ratification.partners_menu
+msgid "Partners"
+msgstr "الجهات"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__partners_net_ids
+msgid "Partners Net"
+msgstr "الصافي"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__partner_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__partner_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__partner_id
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_search_view
+msgid "Payee"
+msgstr "المدفوع له"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__payment_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_loan_line__payment_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__payment_id
+msgid "Payment"
+msgstr "الدفعية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__code
+msgid "Payment Code"
+msgstr "رقم الدفعية"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,state:0
+msgid "Payment Confirmed"
+msgstr "تمت تاكيد الدفعية"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,state:0
+msgid "Payment Created"
+msgstr "تم تحرير الدفعية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__payment_move_id
+msgid "Payment Move"
+msgstr "حركة الدفعية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.report,name:kamil_accounting_financial_ratification.payment_receipt_17_report
+msgid "Payment Receipt 17"
+msgstr "نموذج اذن صرف 17"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__payment_type
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__payment_type
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_search_view
+msgid "Payment Type"
+msgstr "نوع السداد"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__partner_id
+msgid "Payment for"
+msgstr "المدفوع له"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.ui.menu,name:kamil_accounting_financial_ratification.payment_menu
+msgid "Payments"
+msgstr "المدفوعات"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,ratification_type:0
+msgid "Permanent Petty Cash"
+msgstr "عهدة دائمة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__ratification_id
+#: selection:payment.ratification.line,accounts_receivable_types:0
+#: selection:payment.ratification.line,ratification_type:0
+#: selection:ratification.line,accounts_receivable_types:0
+#: selection:ratification.line,ratification_type:0
+#: selection:ratification.list.line,ratification_type:0
+#: selection:ratification.ratification,ratification_type:0
+msgid "Petty Cash"
+msgstr "عهدة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__petty_cash_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__petty_cash_amount
+msgid "Petty Cash Amount"
+msgstr "مبلغ العهدة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.act_window,name:kamil_accounting_financial_ratification.action_petty_cash_clearance
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_petty_cash_clearance
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_account_move__petty_cash_clearance_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_money_supply__petty_cash_clearance_id
+#: model:ir.ui.menu,name:kamil_accounting_financial_ratification.petty_cash_clearance_menu
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+msgid "Petty Cash Clearance"
+msgstr "تصفية العهدة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.report,name:kamil_accounting_financial_ratification.petty_cash_report
+msgid "Petty Cash Receipt"
+msgstr "إقرار إستلام عهدة"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.installment,activity_state:0
+#: selection:ratification.list,activity_state:0
+#: selection:ratification.payment,activity_state:0
+#: selection:ratification.petty.cash.clearance,activity_state:0
+#: selection:ratification.prepaid.expenses,activity_state:0
+#: selection:ratification.ratification,activity_state:0
+msgid "Planned"
+msgstr "المخطط"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/payment.py:338
+#: code:addons/kamil_accounting_financial_ratification/models/payment.py:415
+#, python-format
+msgid "Please Add Account to "
+msgstr "الرجاء إضافة حساب لـ"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/payment.py:242
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:408
+#, python-format
+msgid "Please Add Details!"
+msgstr "رجاءا إضافة تفاصيل"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:412
+#, python-format
+msgid "Please Add Installments Details"
+msgstr "يرجى إضافة تفاصيل الأقساط"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:434
+#, python-format
+msgid "Please Add Prepaid Expenses Installments Details"
+msgstr "الرجاء إضافة تفاصيل أقساط المصروفات مسبقة الدفع"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/petty_cash_clearance.py:129
+#, python-format
+msgid "Please Make Sure that Petty Cash Type is exists in the Ratification"
+msgstr "رجاءاً تاكد من ان هنالك عهدة في التصديق"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__access_url
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__access_url
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__access_url
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__access_url
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__access_url
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__access_url
+msgid "Portal Access URL"
+msgstr "رابط الوصول لبوابة العملاء"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_account_move__prepaid_expense_id
+msgid "Prepaid Expense"
+msgstr "مصروفات مدفوعة مقدماً"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_prepaid_expenses
+#: selection:payment.ratification.line,accounts_receivable_types:0
+#: selection:payment.ratification.line,ratification_type:0
+#: selection:ratification.line,accounts_receivable_types:0
+#: selection:ratification.line,ratification_type:0
+#: selection:ratification.list.line,ratification_type:0
+#: selection:ratification.ratification,ratification_type:0
+msgid "Prepaid Expenses"
+msgstr "مصروفات مدفوعة مقدماً"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__prepaid_expenses_amount
+msgid "Prepaid Expenses Amount"
+msgstr "قيمة المصروف مقدم الدفع"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+msgid "Prepaid Expenses Details"
+msgstr "تفاصيل المصروفات المدفوعة مقدماً"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:480
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__prepaid_expenses_installment_ids
+#, python-format
+msgid "Prepaid Expenses Installment"
+msgstr "قسط المصروفات المدفوعة مقدماً"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.act_window,name:kamil_accounting_financial_ratification.action_prepaid_expenses_installments
+#: model:ir.ui.menu,name:kamil_accounting_financial_ratification.prepaid_expenses_installments_menu
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+msgid "Prepaid Expenses Installments"
+msgstr "اقساط المصروفات المدفوعة مقدماً"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.prepaid_expenses_installments_form_view
+msgid "Prepaid Expenses Move"
+msgstr "حركة المصروفات المدفوعة مقدما"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__prepaid_expenses_payment_term
+msgid "Prepaid Expenses Payment Term"
+msgstr "طريقة السداد"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__prepaid_expenses_start_date
+msgid "Prepaid Expenses Start Date"
+msgstr "تاريخ اول دفعية"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.wizard_ratification_list_form
+msgid "Print"
+msgstr "طباعة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.report,name:kamil_accounting_financial_ratification.cheque_print_report
+msgid "Print Cheque"
+msgstr "طباعة الشيك"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:payment.ratification.line,ratification_type:0
+#: selection:ratification.line,ratification_type:0
+#: selection:ratification.list.line,ratification_type:0
+msgid "Purchases"
+msgstr "مشتروات"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,ratification_type:0
+msgid "Purchases and Inventory"
+msgstr "المشتريات والمخازن"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,prepaid_expenses_payment_term:0
+#: selection:ratification.ratification,service_provider_loan_payment_term:0
+msgid "Quarterly"
+msgstr "ربع سنوى"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__ratification_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__ratification_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__ratification_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__ratification_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__ratification_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_loan_line__ratification_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__ratification_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__ratification_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__ratification_id
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.prepaid_expenses_installment_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_loan_installment_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "Ratification"
+msgstr "التصديق"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__ratification_line_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__ratification_line_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__ratification_line_ids
+msgid "Ratification Line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.act_window,name:kamil_accounting_financial_ratification.action_ratification_list
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction__ratification_list_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__ratification_list_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_complex__ratification_list_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__ratification_list_id
+#: model:ir.ui.menu,name:kamil_accounting_financial_ratification.ratification_list_menu
+#: selection:wizard.ratification.list,list_type:0
+msgid "Ratification List"
+msgstr "المُسير"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.act_window,name:kamil_accounting_financial_ratification.action_ratification_list_complex
+#: model:ir.ui.menu,name:kamil_accounting_financial_ratification.ratification_list_complex_menu
+msgid "Ratification List Complex"
+msgstr "دمج المسيرات"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.report,name:kamil_accounting_financial_ratification.ratification_list_report
+msgid "Ratification List Report"
+msgstr "تقرير المسير"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:wizard.ratification.list,list_type:0
+msgid "Ratification List With Items"
+msgstr "المُسير مع البنود"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_collection_collection__ratification_loan_installment_id
+msgid "Ratification Loan Installment"
+msgstr "قسط سلفية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__ref
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+msgid "Ratification Number"
+msgstr "رقم التصديق"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_account_move__ratification_payment_id
+msgid "Ratification Payment"
+msgstr "الدفعية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.report,name:kamil_accounting_financial_ratification.ratification_report
+msgid "Ratification Report"
+msgstr "تقرير التصاديق"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__ratification_type
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__ratification_type
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__the_type
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__ratification_type
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__the_type
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__ratification_type
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__ratification_type
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_search_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "Ratification Type"
+msgstr "نوع التصديق"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.act_window,name:kamil_accounting_financial_ratification.action_ratification
+#: model:ir.ui.menu,name:kamil_accounting_financial_ratification.ratification_main_menu
+#: model:ir.ui.menu,name:kamil_accounting_financial_ratification.ratification_menu
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+msgid "Ratifications"
+msgstr "التصاديق المالية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__ref
+msgid "Ref"
+msgstr "الرقم"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__remaining_amount
+msgid "Remaining Amount"
+msgstr "القيمة المتبقية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__remaining_value
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__remaining_value
+msgid "Remaining Value"
+msgstr "القيمة المتبقية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__report_line_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__report_line_ids
+msgid "Report Line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__activity_user_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__activity_user_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__activity_user_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__activity_user_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__activity_user_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__activity_user_id
+msgid "Responsible User"
+msgstr "المستخدم المسئول"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__remaining_account_id
+msgid "Return Amount to Account"
+msgstr "ارجاع المتبقي للحساب"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__remaining_journal_id
+msgid "Return Amount to Bank/Cash"
+msgstr "ارجاع المتبقي للبنك/الخزينة"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_loan_installment_form_view
+msgid "Revenue Collection"
+msgstr "التحصيل"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_collection_collection
+msgid "Revenues Collection"
+msgstr "تحصيل الإيرادات"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_wizard_payment_cancel__date
+msgid "Reverse Entry Date"
+msgstr "تاريخ القيد العكسي"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,ratification_type:0
+msgid "Salaries and Benefits"
+msgstr "المزايا والاجور"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__access_token
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__access_token
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__access_token
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__access_token
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__access_token
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__access_token
+msgid "Security Token"
+msgstr "رمز الحماية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__service_levels
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__service_levels
+msgid "Service Levels"
+msgstr "مستوى الخدمة"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:payment.ratification.line,accounts_payable_types:0
+#: selection:payment.ratification.line,ratification_type:0
+#: selection:ratification.line,accounts_payable_types:0
+#: selection:ratification.line,ratification_type:0
+#: selection:ratification.list.line,ratification_type:0
+#: selection:ratification.ratification,ratification_type:0
+msgid "Service Provider Claim"
+msgstr "مطالبات الجهات مقدمة الخدمة"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,ratification_type:0
+msgid "Service Provider Loan"
+msgstr "سلفيات الجهات مقدمة الخدمة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_installment
+msgid "Service Provider Loan Installment"
+msgstr "اقساط سلفيات الجهات مقدمة الخدمة"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+msgid "Service Provider Loan Installments"
+msgstr "اقساط سلفيات الجهات مقدمة الخدمة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__service_provider_loan_payment_term
+msgid "Service Provider Loan Payment Term"
+msgstr "طريقة السداد"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__service_provider_loan_start_date
+msgid "Service Provider Loan Start Date"
+msgstr "تاريخ بدء السداد"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:payment.ratification.line,accounts_receivable_types:0
+#: selection:payment.ratification.line,ratification_type:0
+#: selection:ratification.line,accounts_receivable_types:0
+#: selection:ratification.line,ratification_type:0
+#: selection:ratification.list.line,ratification_type:0
+msgid "Service Provider Loans"
+msgstr "سلفيات الجهات مقدمة الخدمة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.act_window,name:kamil_accounting_financial_ratification.action_servic_providers_loans_installments
+#: model:ir.ui.menu,name:kamil_accounting_financial_ratification.service_providers_loans_installments_menu
+msgid "Service Providers Loans Installments"
+msgstr "اقساط سلفيات الجهات مقدمة الخدمة"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+msgid "Set to Draft"
+msgstr "تعيين كمسودة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__source_id
+msgid "Source"
+msgstr "المصدر"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__state
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__state_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__state
+msgid "State"
+msgstr "الحالة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_installment__activity_state
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_list__activity_state
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_payment__activity_state
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__activity_state
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__activity_state
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_ratification__activity_state
+msgid "Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr "الحالة على أساس الأنشطة\n"
+"المتأخرة: تاريخ الاستحقاق مر\n"
+"اليوم: تاريخ النشاط هو اليوم\n"
+"المخطط: الأنشطة المستقبلية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__stock_id
+msgid "Stock"
+msgstr "المخزن"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__stock_account_id
+msgid "Stock Account"
+msgstr "حساب المخزن"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+msgid "Stock Info"
+msgstr "معلومات المخزن"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__accounts_payable_types
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_line__accounts_receivable_types
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__accounts_payable_types
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__accounts_receivable_types
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__accounts_payable_types
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__accounts_receivable_types
+msgid "Sub Type"
+msgstr "المجموعة الفرعية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line__tag_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__tag_id
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "Tag"
+msgstr "الوسم"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.act_window,name:kamil_accounting_financial_ratification.action_tags_analysis
+#: model:ir.ui.menu,name:kamil_accounting_financial_ratification.tags_analysis_menu
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_pivot_view
+msgid "Tags Analysis"
+msgstr "تحليل الوسوم"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:848
+#, python-format
+msgid "Tags amount can not be bigger than budget item amount"
+msgstr "المبالغ في التفاصيل لا يمكن ان يكون اكبر من المبلغ المدخل"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__tax_ids
+msgid "Tax"
+msgstr "الضريبة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__tax_amount_ids
+msgid "Tax Amount"
+msgstr "قيمة الضريبة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__tax_line_ids
+msgid "Tax Line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_payment_ratification_tax_line__tax_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tax_line__tax_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_tax_line__tax_id
+msgid "Tax/Deduction"
+msgstr "خصم"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__total_taxes_amount_in_words
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__total_taxes_amount_in_words
+msgid "Taxes Amount in Words"
+msgstr "قيمة الخصومات بالاحرف"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+msgid "Taxes/Deductions"
+msgstr "الخصومات/الضرائب"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.payment,deduct_commission:0
+msgid "The Account"
+msgstr "الحساب"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.payment,deduct_commission:0
+msgid "The Amount"
+msgstr "المبلغ"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__the_name
+msgid "The Name"
+msgstr "الاسم"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_list_other_deduction__partner_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__partner_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list_line__partner_id
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.tags_analysis_searche_view
+msgid "The Partner"
+msgstr "الجهة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_payment
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+msgid "The Payments"
+msgstr "الدفعيات"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:859
+#, python-format
+msgid "There is no Enough Budget"
+msgstr "لا توجد موازنة كافية"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/payment.py:254
+#, python-format
+msgid "There is no enough balance"
+msgstr "لا يوجد رصيد كافي"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.installment,activity_state:0
+#: selection:ratification.list,activity_state:0
+#: selection:ratification.payment,activity_state:0
+#: selection:ratification.petty.cash.clearance,activity_state:0
+#: selection:ratification.prepaid.expenses,activity_state:0
+#: selection:ratification.ratification,activity_state:0
+msgid "Today"
+msgstr "اليوم"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_tree_view
+msgid "Total"
+msgstr "الإجمالي"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_line_tag__line_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__total_amount
+msgid "Total Amount"
+msgstr "القيمة الكلية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__total_loan_amount
+msgid "Total Loan Amount"
+msgstr "إجمالي السلفيات"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__total_net_amount
+msgid "Total Net Amount"
+msgstr "إجمالي القيمة الصافية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__total_net_amount_in_words
+msgid "Total Net Amount In Words"
+msgstr "إجمالي القيمة الصافية بالاحرف"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__total_taxes_amount
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__total_taxes_amount
+msgid "Total Taxes Amount"
+msgstr "إجمالي قيمة الخصومات"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__transfer_date
+msgid "Transfer Date"
+msgstr "تاريخ التحويل"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__to_account_id
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__prepaid_expenses_account_id
+msgid "Transfer to Account"
+msgstr "التحويل لحساب"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.prepaid.expenses,state_id:0
+msgid "Transfered"
+msgstr "تم التحويل"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:payment.ratification.line,item_type:0
+#: selection:ratification.line,item_type:0
+msgid "Transformed"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: selection:ratification.ratification,state:0
+msgid "Under Execution"
+msgstr "تحت التنفيذ"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_unread
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_unread
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_unread
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_unread
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_unread
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_unread
+msgid "Unread Messages"
+msgstr "الرسائل الجديدة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__message_unread_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__message_unread_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__message_unread_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__message_unread_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__message_unread_counter
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "عدد الرسائل الجديدة"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_installment__website_message_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_list__website_message_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_payment__website_message_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__website_message_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__website_message_ids
+#: model:ir.model.fields,field_description:kamil_accounting_financial_ratification.field_ratification_ratification__website_message_ids
+msgid "Website Messages"
+msgstr "رسائل الموقع"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_installment__website_message_ids
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_list__website_message_ids
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_payment__website_message_ids
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_petty_cash_clearance__website_message_ids
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_prepaid_expenses__website_message_ids
+#: model:ir.model.fields,help:kamil_accounting_financial_ratification.field_ratification_ratification__website_message_ids
+msgid "Website communication history"
+msgstr "سجل تواصل الموقع"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_wizard_payment_report
+msgid "Wizard Payment Report"
+msgstr "تقرير الدفعيات"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/ratification_list.py:98
+#, python-format
+msgid "You Can not Cancel the List after the ratification was Issued"
+msgstr "لا يمكن إلغاء مسير بعد ان تم إصدار الدفعية"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/payment.py:84
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:136
+#, python-format
+msgid "You Can not delete a Record, witch is not Draft or Canceled"
+msgstr "لا يمكنك حذف مستند الا اذا كان في الحالة مسودة او ملغي"
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/ratification_list.py:105
+#, python-format
+msgid "You Can not delete a record, witch is not Draft or Canceled"
+msgstr "لا يمكنك حذف مستند الا اذا كان في الحالة مسودة او ملغي"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+msgid "added_amount"
+msgstr "إضافة مبلغ"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_tree_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.petty_cash_clearance_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_tree_view
+msgid "amount"
+msgstr "القيمة"
+
+#. module: kamil_accounting_financial_ratification
+#: selection:payment.ratification.line,ratification_type:0
+#: selection:ratification.line,ratification_type:0
+#: selection:ratification.list.line,ratification_type:0
+msgid "expenses"
+msgstr "مصروفات"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_list_deduction_line
+msgid "list.deduction.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_list_other_deduction
+msgid "list.other.deduction"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.payment_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_form_view
+msgid "loan_amount"
+msgstr "قيمة السلفية"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_payment_ratification_line
+msgid "payment.ratification.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_payment_ratification_loan_line
+msgid "payment.ratification.loan.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_payment_ratification_tax_line
+msgid "payment.ratification.tax.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_payment_report_line
+msgid "payment.report.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_petty_cash_clearance_tax
+msgid "petty.cash.clearance.tax"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/ratification.py:415
+#, python-format
+msgid "please add a valide number for the Account "
+msgstr "المبلغ يجب ان يكون اكبر من صفر"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_line
+msgid "ratification.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_line_level
+msgid "ratification.line.level"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_line_tag
+msgid "ratification.line.tag"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_line_tax_line
+msgid "ratification.line.tax.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_list
+msgid "ratification.list"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_list_complex
+msgid "ratification.list.complex"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_list_line
+msgid "ratification.list.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_list_line_deduction
+msgid "ratification.list.line.deduction"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_list_partner_net
+msgid "ratification.list.partner.net"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_loan_line
+msgid "ratification.loan.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_petty_cash_clearance_line
+msgid "ratification.petty.cash.clearance.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_report_line
+msgid "ratification.report.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_ratification_tax_line
+msgid "ratification.tax.line"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_report_kamil_accounting_financial_ratification_exchange_order
+msgid "report.kamil_accounting_financial_ratification.exchange_order"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_report_kamil_accounting_financial_ratification_letter_bank
+msgid "report.kamil_accounting_financial_ratification.letter_bank"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_report_kamil_accounting_financial_ratification_list_template
+msgid "report.kamil_accounting_financial_ratification.list_template"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_report_kamil_accounting_financial_ratification_ornek_40
+msgid "report.kamil_accounting_financial_ratification.ornek_40"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_report_kamil_accounting_financial_ratification_payment_template
+msgid "report.kamil_accounting_financial_ratification.payment_template"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_report_kamil_accounting_financial_ratification_receipt_confide
+msgid "report.kamil_accounting_financial_ratification.receipt_confide"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_report_kamil_accounting_financial_ratification_tax_1_template
+msgid "report.kamil_accounting_financial_ratification.tax_1_template"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.actions.act_window,name:kamil_accounting_financial_ratification.action_payments
+msgid "the payments"
+msgstr "الدفعيات"
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_form_view
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.ratification_list_tree_view
+msgid "total"
+msgstr "الإجمالي"
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_wizard_payment_cancel
+msgid "wizard.payment.cancel"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model:ir.model,name:kamil_accounting_financial_ratification.model_wizard_ratification_list
+msgid "wizard.ratification.list"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "إعداد"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "اسم البنك"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "اسم المستفيد"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_one_percent_template
+msgid "اشارة للموضوع اعلاه افيدكم بانه تم خصم مبلغ"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "اعتماد"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "الإجمالي"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "الحساب"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_one_percent_template
+msgid "السلام عليكم ورحمة الله"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "الفرع"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "المبلغ"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "المبلغ المستحق الدفع"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+msgid "اُقر بانني قد استلمت مبلغ وقدره"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_one_percent_template
+msgid "بالشيك رقم ("
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "باﻹشارة للموضوع اعلاه نرجو شاكرين التكرم بتحويل مبلغ"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "بتاريخ"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "بهذا فقد تصدق بمبلغ"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "تحول بنكياً"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "تحول بنكياً\n"
+"												<br/>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "تدفع بشيك"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "تدفع بشيك				\n"
+"												<br/>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "تدفع بشيك مصرفي"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "تدفع بشيك مصرفي\n"
+"												<br/>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "تدفع نقداً"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "تدفع نقداً\n"
+"												<br/>"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_one_percent_template
+msgid "جنيه  من قيمة"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+msgid "جنيه ("
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "دائن"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "رقم الحساب"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_one_percent_template
+msgid "عبارة عن ضريبة الـ1%، حسب منشور وزارة المالية والاقتصاد الوطني"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/payment.py:794
+#, python-format
+msgid "عكس القيد -- "
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: code:addons/kamil_accounting_financial_ratification/models/payment.py:783
+#: code:addons/kamil_accounting_financial_ratification/models/payment.py:784
+#, python-format
+msgid "عكس القيد --> "
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+msgid "قائمة بأسماء المدفوع لهم بالمستند رقم ("
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_payment_receipt_17_template
+msgid "مدين"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.list_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_petty_cash_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "مراجعة"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_ratification_template
+msgid "مع تحمل خصوم"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "مع مراعاة خصم العمولة من الحساب"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_for_partner_template
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_bank_trnasfer_template
+msgid "مع مراعاة خصم العمولة من المبلغ"
+msgstr ""
+
+#. module: kamil_accounting_financial_ratification
+#: model_terms:ir.ui.view,arch_db:kamil_accounting_financial_ratification.report_one_percent_template
+msgid "والله الموفق"
+msgstr ""
+

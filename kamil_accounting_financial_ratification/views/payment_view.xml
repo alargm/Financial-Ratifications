@@ -1,0 +1,253 @@
+<odoo>
+	<data>
+			
+		<record id="payment_tree_view" model="ir.ui.view">
+			<field name="name">Payment Tree</field>
+			<field name="model">ratification.payment</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="code"/>
+					<field name="ratification_id"/>
+					<field name="partner_id"/>
+					<field name="date"/>
+					<field name="amount" sum="amount"/>
+					<field name="branch_id"/>
+					<field name="payment_type"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+
+
+		<record id="payment_search_view" model="ir.ui.view">
+			<field name="name">Payment Search</field>
+			<field name="model">ratification.payment</field>
+			<field name="arch" type="xml">
+				<search>
+					
+					<!-- <field name="ratification_id"/> -->
+					<field name="code"/>
+					<field name="partner_id"/>
+					<field name="payment_type"/>
+					<field name="check_number"/>
+
+					<group expand="1" string="Group By">
+					
+						<filter string="Date" name="duemonth" context="{'group_by':'date:month'}"/>
+
+						<filter name="group_by_payee" string="Payee" context="{'group_by':'partner_id'}"/>
+
+						<filter name="group_by_branch" string="Branch" context="{'group_by':'branch_id'}"/>
+
+						<filter name="group_by_payment_type" string="Payment Type" context="{'group_by':'payment_type'}"/>
+
+					</group>
+				</search>
+			</field>
+		</record>
+
+
+		<record id="payment_form_view" model="ir.ui.view">
+			<field name="name">Payment Form</field>
+			<field name="model">ratification.payment</field>
+			<field name="arch" type="xml">
+				<form>
+					<header>
+						<button name="do_confirm" string="Confirm" type="object" states="draft" class="oe_highlight"/>
+						<button name="do_approve" string="Audit" type="object" states="confirmed" class="oe_highlight"/>	
+						
+
+						<button name="do_canceled" string="Cancel" type="object" states="confirmed,approved"/>
+
+						<button name="do_set_to_draft" string="Set to Draft" type="object" states="canceled"/>
+
+						<field name="state" widget="statusbar"/>
+					</header>	
+					<sheet>
+						
+
+		                <div class="oe_button_box" name="button_box">
+		                	<button class="oe_stat_button" type="object" name="show_payment_moves" icon="fa-bars" attrs="{'invisible':[('payment_move_id','=',False)]}">
+		                    	Journal Enteries
+		                    	<field name="payment_move_id" invisible="1"/>
+		                    </button>
+
+		                    <field name="has_petty_cash" invisible="1"/>
+							<button class="oe_stat_button" type="object" name="show_clearance" icon="fa-pencil-square-o" attrs="{'invisible':['|',('state','not in',['approved']),('has_petty_cash','!=',True)]}">
+								Petty Cash Clearance 
+							</button>
+
+		                </div>
+
+						<div class="float-right"> 
+							<h2>
+								<label for="code"/><br/>
+								<field name="code" readonly="1"/>
+							</h2>
+						</div>
+						<group col="4">
+							<field name="partner_id" required="1" attrs="{'readonly':[('state','!=','draft')]}" />
+							<field name="branch_id" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="date" required="1" attrs="{'readonly':[('state','!=','draft')]}" />
+							<field name="ratification_id" required="1" attrs="{'readonly':[('state','!=','draft')]}" readonly="1"/>
+							<field name="payment_type" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="currency_id" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+						</group>
+						<group col="4">
+							<field name="journal_id" domain="[('type','in',['bank','cash'])]" options="{'no_create':True}" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="available_balance" readonly="1"/>
+							<field name="check_number" string="Cheque Number/Payment Receipt Number" required="1" />
+							
+							<field name="account_number" attrs="{'invisible':[('payment_type','in',['cash'])], 'required':[('payment_type','in',['bank_transfer','Cheque','counter_cheque'])],'readonly':[('state','!=','draft')]}"/>
+
+						</group>
+						<group col="4">
+							<field name="amount"/>
+							<field name="amount_in_words"/>
+						</group>
+						<group>
+							<field name="deduct_commission" attrs="{'required':[('payment_type','=','bank_transfer')],'invisible':[('payment_type','!=','bank_transfer')]}"/>
+						</group>
+
+						<notebook>
+							<page string="Details">
+								<field name="line_ids">
+									<tree editable="bottom" create="0" edit="0" delete="0">
+										<field name="partner_id"  invisible="1"/>
+										<field name="ratification_type" invisible="1"/>
+										<field name="name"/>
+										<field name="branch_id" required="1"  options="{'no_create':True}"/>
+										<field name="account_id"/>
+										<field name="analytic_account_id" />
+										<field name="cost_center_id"/>
+										<field name="analytic_tag_ids" widget="many2many_tags"/>
+										<field name="amount" sum="amount"/>
+
+										<field name="accounts_receivable_types"  invisible="1"/>
+										<field name="accounts_payable_types" invisible="1"/>
+										<field name="account_code" invisible="1"/>
+									</tree>	
+								</field>
+							</page>
+
+							<page string="Taxes/Deductions">
+								<field name="tax_line_ids">
+									<tree editable="bottom" create="0" edit="0" delete="0">
+										<field name="partner_id" invisible="1"/>
+										<field name="name" required="1"/>
+										<field name="tax_id" required="1"  options="{'no_create':True}" domain="[('type_tax_use','=','purchase')]"/>
+										<field name="amount" required="1"  sum="amount"/>
+									</tree>
+								</field>
+							</page>
+							
+							<page string="Total">
+								<field name="report_line_ids">
+									<tree>
+										<field name="account_id"/>
+										<field name="analytic_account_id"/>
+										<field name="debit_amount"/>
+										<field name="credit_amount"/>
+									</tree>
+								</field>
+							</page>
+
+							<page string="Stock Info" invisible="1">
+								<group col="4">
+									<field name="stock_id"/>
+									<field name="stock_account_id"/>
+								</group>
+							</page>
+
+							<page string="Loans" invisible="1">
+								<field name="loan_line_ids">
+									<tree editable="bottom" create="false">
+										<field name="name" readonly="1"/>
+										<field name="loan_date" readonly="1"/>
+										<field name="loan_amount" readonly="1" sum="loan_amount"/>
+										<field name="is_add_loan"/>
+										<field name="added_amount" sum="added_amount" attrs="{'readonly':[('is_add_loan','=',False)]}"/>
+									</tree>
+								</field>
+							</page>
+						</notebook>
+						<group col="4">
+							<field name="amount"/>
+							<field name="amount_in_words"/>
+
+							<field name="total_taxes_amount"/>
+							<field name="total_taxes_amount_in_words"/>
+
+							<!-- <field name="total_loan_amount" attrs="{'invisible':[('has_loan','=',False)]}"/> -->
+							<!-- <field name="total_loan_amount_in_words" attrs="{'invisible':[('has_loan','=',False)]}"/> -->
+
+							<field name="net_amount"/>
+							<field name="net_amount_in_words"/>
+						</group>
+					</sheet>
+					<div class="oe_chatter">
+						<field name="message_follower_ids" widget="mail_followers"/>
+						<field name="activity_ids" widget="mail_activity"/>
+						<field name="message_ids" widget="mail_thread"/>
+					</div>
+				</form>
+			</field>
+		</record>
+
+
+		<record id="cancel_payment_wizard_view" model="ir.ui.view">
+			<field name="name">Payment Cancel Wizard</field>
+			<field name="model">wizard.payment.cancel</field>
+			<field name="arch" type="xml">
+				<form>
+					<sheet>
+						<group>
+							<field name="date" required="1"/>
+						</group>
+			
+						<footer>
+							<button name="do_cancel" type="object" string="Do Cancel" class="btn-primary"/>
+							<!-- <button string="Cancel" special="cancel" class="btn-secondary"/> -->
+						</footer>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+<!-- 
+		<record id="payment_line_form_view" model="ir.ui.view">
+			<field name="name">Payment Line Form</field>
+			<field name="model">payment.ratification.line</field>
+			<field name="arch" type="xml">
+				<tree>
+					<field name="name"/>
+					<field name="amount"/>
+				</tree>
+			</field>
+		</record>
+
+ -->
+		<record id="action_payments" model="ir.actions.act_window">
+			<field name="name">the payments</field>
+			<field name="res_model">ratification.payment</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem id="payment_menu" name="the payments" parent="account_accountant.menu_accounting" sequence="-7" action="action_payments"/>
+
+
+<!-- 
+		<record id="action_payment_line" model="ir.actions.act_window">
+			<field name="name">Payment Line</field>
+			<field name="res_model">payment.ratification.line</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem id="payment_line_menu" name="Payment Line" parent="payment_menu" sequence="-8" action="action_payment_line"/>
+ -->
+
+
+		
+
+	</data>
+</odoo>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+
+	<report 
+		id="counter_cheque_report"
+		model="ratification.payment"
+		string="Counter Cheque Letter"
+		report_type="qweb-html"
+		name="kamil_accounting_financial_ratification.report_counter_cheque_letter"
+	/>
+
+	<template id="report_counter_cheque_letter">
+		<t t-call="web.html_container">
+			<t t-foreach="docs" t-as="o">
+				<t t-call="web.external_layout">
+					<div class="page">
+						<t t-if="o.payment_type == 'counter_cheque'">
+
+							<p class="text-right">
+								<strong style="float:right"> التاريخ </strong>
+								<span style="float:right;margin-right:20px" t-esc="o.date"></span>
+							</p>
+							<br/>
+							<p class="text-right">
+								<strong style="float:right"> السيد مدير  </strong>
+
+								<t t-if="o.journal_id.full_name">
+									<span style="float:right;margin-right:20px" t-esc="o.journal_id.full_name"></span>	
+								</t>
+								<t t-if="not o.journal_id.full_name">
+									<span style="float:right;margin-right:20px" t-esc="o.journal_id.name"></span>	
+								</t>
+							</p>
+							<br/>
+							<p class="text-center">
+								السلام عليكم ورحمة الله 
+							</p>
+
+							<br/>
+							<br/>
+							<p class="text-center">
+								<strong class="text-center">
+									<u>
+										الموضوع / تحرير شيك مصرفي
+									</u>
+								</strong>
+							</p>
+
+							<strong style="float:right">
+							
+							إشارة للموضوع أعلاه الرجاء التكرم بتحرير شيك مصرفي لـ<t t-esc="o.partner_id.name"/> بقيمة <t t-esc="'{0:,.2f}'.format(float(o.net_amount))"/>  ( <t t-esc="o.net_amount_in_words"/> ) مخصوم من حسابنا طرفكم بالرقم ( <t t-esc="o.account_number"/> )
+							</strong>
+							
+							<br/>
+							<br/>
+
+							<p class="text-center">
+							 	جزاكم الله خيراً
+							</p>
+
+
+
+							<br/>
+							<br/>
+							<br/>
+
+
+
+							<br/><br/><br/><br/>
+							<div>
+								<table class="text-right table table-condensed table-hover">
+									<tr>
+										<td>
+											<strong style="float:right"> توقيع اول </strong>
+											<span style="float:right;margin-right:20px">
+												................................................................................
+											</span>
+										</td>
+										<td>
+											<strong style="float:right"> توقيع ثاني </strong>
+											<span style="float:right;margin-right:20px">
+												................................................................................
+											</span>
+										</td>
+									</tr>
+								</table>
+							</div>
+
+
+								
+
+
+						</t>
+
+					</div>
+				</t>
+			</t>
+		</t>
+	</template>
+
+
+</odoo>
+
+
+

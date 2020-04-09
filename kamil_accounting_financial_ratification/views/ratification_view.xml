@@ -1,0 +1,342 @@
+<odoo>
+	<data>
+			
+		<record id="ratification_tree_view" model="ir.ui.view">
+			<field name="name">Ratification Tree</field>
+			<field name="model">ratification.ratification</field>
+			<field name="arch" type="xml">
+			<tree decoration-warning="state in ['executed','payment_confirmed']" decoration-info="state == 'audited'" decoration-primary="state == 'payment_created'"  decoration-success="state == 'paid'" decoration-muted="state == 'canceled'">
+					<field name="ref"/>
+					<field name="name"/>
+					<field name="partner_id"/>
+					<field name="state_id"/>
+					<field name="date"/>
+					<field name="payment_type"/>
+					<field name="net_amount" sum="amount"/>
+					<field name="state"/>
+				</tree>
+			</field>
+		</record>
+
+
+		<record id="ratification_form_view" model="ir.ui.view">
+			<field name="name">Ratification Form</field>
+			<field name="model">ratification.ratification</field>
+			<field name="arch" type="xml">
+				<form>
+					<header>
+						<button name="do_confirm" string="Confirm" type="object" states="draft" class="oe_highlight"/>
+						
+						<button name="do_audit" string="Approve" type="object" states="executed" class="oe_highlight"/>
+						
+						<button name="do_cancel" string="Cancel" type="object" states="executed,audited"/>
+
+						<button name="do_reset_to_draft" string="Set to Draft" type="object" states="canceled" class="oe_highlight"/>
+						
+
+						<field name="state" widget="statusbar" statusbar_visible="draft,confirmed,audited"/>
+					</header>
+					<sheet>
+
+						<div class="oe_button_box" name="button_box">
+
+							<button class="oe_stat_button" type="object" name="show_payments" icon="fa-pencil-square-o" attrs="{'invisible':[('state','in',['draft','executed','calceled'])]}">
+								The Payments
+							</button>
+
+							<!-- <button class="oe_stat_button" type="object" name="show_clearance" icon="fa-pencil-square-o" attrs="{'invisible':['|',('state','in',['draft','executed','calceled']),('has_petty_cash','!=',True)]}">
+								Petty Cash Clearance 
+							</button> -->
+
+							<button class="oe_stat_button" type="object" name="show_service_provider_loan_installments" icon="fa-bars" attrs="{'invisible':['|',('state','in',['draft','executed','calceled']),('line_has_loan','!=',True)]}">
+								Service Provider Loan Installments
+							</button>
+
+							<button class="oe_stat_button" type="object" name="show_prepaid_expenses_installments" icon="fa-bars" attrs="{'invisible':['|',('state','in',['draft','executed','calceled']),('has_prepaid','!=',True)]}">
+								Prepaid Expenses Installments
+							</button>
+
+						</div>
+
+						<div class="float-right">
+							<h2>
+								<label for="ref" string="Ratification Number"/><br/>
+								<field name="ref" string="Ratification Number" readonly="1"/>
+							</h2>
+						</div>
+						<field name="partner_is_bank" invisible="1"/>
+						<group col="4">
+							<field name="partner_id" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="state_id" options="{'no_create':True}" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="date" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<!-- <field name="ratification_type" required="1" attrs="{'readonly':[('state','!=','draft')]}"/> -->
+							<field name="payment_type" required="1" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="ratification_list_id" domain="[('state','!=','draft'),('ratification_ids','=',False)]" attrs="{'readonly':[('state','!=','draft')],'required':[('partner_is_bank','=',True)]}"/>
+							<field name="source_id" attrs="{'readonly':[('state','!=','draft')]}"/>
+							<field name="currency_id" options="{'no_create':True}" attrs="{'readonly':[('state','!=','draft')]}"/>					
+						</group>
+						
+
+						<field name="has_prepaid" invisible="1"/>
+						<field name="line_has_loan" invisible="1"/>
+						<field name="has_petty_cash" invisible="1"/>
+						
+						<field name="petty_cash_amount" invisible="1"/>
+						
+						<notebook>
+							<page string="Details">
+								<field name="line_ids" attrs="{'readonly':[('state','!=','draft')]}" force_save="1">
+									<tree>
+										
+										<field name="partner_id" invisible="1"/>
+										
+										<field name="ratification_type" invisible="1"/>
+
+										<field name="the_type" required="1"/>
+
+										<field name="branch_id" required="1"  options="{'no_create':True}"/>
+										
+										<field name="account_id" options="{'no_create':True}" required="1" domain="[('is_group','=','sub_account')]" />
+										
+										<field name="analytic_account_id"  options="{'no_create':True}" attrs="{'invisible':[('ratification_type','in',['accounts_receivable','petty_cash','service_provider_loan','prepaid_expenses','purchases'])],'required':[('ratification_type','in',['expenses','employees_compensation','medical_service_expenses','grants','social_benefits','subsidies'])]}"/>
+	
+										<field name="cost_center_id"/>
+
+										<field name="amount" required="1" sum="amount"/>
+									
+										<field name="name" required="1"/>
+										<field name="account_code" invisible="1"/>
+									</tree>	
+									<form>
+										<sheet>
+											<group col="2">
+												<field name="the_type" required="1"/>
+												<field name="accounts_receivable_types" attrs="{'invisible':[('the_type','!=','accounts_receivable')]}" widget="radio" options="{'horizontal': true}"/>
+												<field name="accounts_payable_types"  attrs="{'invisible':[('the_type','!=','accounts_payable')]}" widget="radio" options="{'horizontal': true}"/>
+											</group>
+
+											<field name="ratification_type" invisible="1"/>
+
+											<group col="4">
+												<field name="account_id" options="{'no_create':True}" required="1" domain="[('is_group','=','sub_account')]" />
+									
+												<field name="analytic_account_id"  options="{'no_create':True}" attrs="{'invisible':[('ratification_type','in',['accounts_receivable','petty_cash','service_provider_loan','prepaid_expenses','purchases','accounts_payable'])],'required':[('ratification_type','in',['expenses','employees_compensation','medical_service_expenses','grants','social_benefits','subsidies'])]}"/>
+												<field name="approved_value" attrs="{'invisible':[('the_type','in',['accounts_receivable','accounts_payable'])]}"/>
+												<field name="remaining_value" attrs="{'invisible':[('the_type','in',['accounts_receivable','accounts_payable'])]}"/>
+											</group>
+											<group>
+												<field name="amount" required="1"/>
+											</group>
+											
+											<separator string="Deductions"></separator>
+											<field name="deduction_ids">
+												<tree editable="bottom">
+													<field name="tax_id" options="{'no_create':True}" required="1"/>
+													<field name="name" required="1"/>
+													<field name="amount" required="1" sum="Amount"/>
+												</tree>
+											</field>
+
+											<group col="4">
+												<field name="deduction_amount"/>
+												<field name="net_amount" />
+											</group>
+											
+
+											<group>
+												<field name="name" required="1"/>
+											</group>
+											<group col="4">
+												<field name="cost_center_id"/>
+												<field name="branch_id" required="1"  options="{'no_create':True}"/>
+											</group>
+											<group>
+												<field name="item_type"/> 
+											</group>
+											<separator string="Analytic Tags"></separator>
+											<group>
+												<field name="level_id"/>
+											</group>
+											<field name="tag_ids">
+												<tree editable="bottom">
+													<field name="tag_id" required="1"/>
+													<field name="amount" sum="Amount" required="1"/>
+												</tree>
+											</field>
+										</sheet>
+									</form>
+								</field>
+
+								<separator string="Deductions"></separator>
+								<field name="tax_ids" attrs="{'readonly':[('state','!=','draft')]}" force_save="1">
+									<tree editable="bottom" create="0">
+										<field name="partner_id" invisible="1"/>
+										<field name="name" required="1"/>
+										<field name="tax_id" required="1"  options="{'no_create':True}" string="Deduction" />
+										<field name="amount" required="1"  sum="amount"/>
+									</tree>
+								</field>
+
+							</page>
+
+							<page string="Total">
+								<field name="report_line_ids">
+									<tree>
+										<field name="account_id"/>
+										<field name="analytic_account_id"/>
+										<field name="amount"/>
+									</tree>
+								</field>
+							</page>
+
+							<page string="Loans" attrs="{'invisible':[('has_loan','=',False)], 'readonly':[('state','!=','draft')]}">
+								<field name="loan_ids">
+									<tree editable="bottom" create="false">
+										<field name="name" readonly="1"/>
+										<field name="loan_date" readonly="1"/>
+										<field name="loan_amount" readonly="1" sum="loan_amount"/>
+										<field name="is_add_loan"/>
+										<field name="added_amount" sum="added_amount" attrs="{'readonly':[('is_add_loan','=',False)]}"/>
+									</tree>
+								</field>
+							</page>
+
+							<page string="Installment Details" attrs="{'invisible':[('line_has_loan','!=',True)]}">
+								<group col="4">
+									<field name="service_provider_loan_amount" attrs="{'readonly':[('state','!=','draft')], 'required':[('line_has_loan','=',True)]}"/>
+									<field name="number_of_installment" attrs="{'readonly':[('state','!=','draft')], 'required':[('line_has_loan','=',True)]}"/>
+
+									<field name="service_provider_loan_payment_term" attrs="{'readonly':[('state','!=','draft')], 'required':[('line_has_loan','=',True)]}"/>
+									<field name="service_provider_loan_start_date" attrs="{'readonly':[('state','!=','draft')], 'required':[('line_has_loan','=',True)]}"/>
+								</group>
+								<separator string="Installment Details"/>
+								<field name="installment_ids" attrs="{'readonly':[('state','!=','draft')]}">
+									<tree editable="bottom" create="false">
+										<field name="name" required="1"/>
+										<!-- <field name="account_id" required="1" options="{'no_create':True}"/> -->
+										<field name="date" required="1"/>
+										<field name="amount" required="1" sum="amount"/>
+										<field name="is_paid" readonly="1"/>
+										<field name="state" invisible="1"/>
+									</tree>
+								</field>
+							</page>
+
+							<page string="Prepaid Expenses Details" attrs="{'invisible':[('has_prepaid','!=', True)]}">
+								<group col="4">
+									<field name="prepaid_expenses_amount" required="[('has_prepaid','=',True)]" readonly="[('state','!=','draft')]" force_save="1"/>
+									<field name="prepaid_expenses_number_of_installment" attrs="{'readonly':[('state','!=','draft')],'required':[('has_prepaid','=',True)]}"/>
+									<field name="prepaid_expenses_payment_term" attrs="{'readonly':[('state','!=','draft')],'required':[('has_prepaid','=',True)]}"/>
+									<field name="prepaid_expenses_start_date" attrs="{'readonly':[('state','!=','draft')],'required':[('has_prepaid','=',True)]}"/>
+									
+									<field name="prepaid_expenses_account_id" attrs="{'readonly':[('state','!=','draft')],'required':[('has_prepaid','=',True)]}" options="{'no_create':True}"/>
+									<field name="prepaid_expenses_budget_item_id" attrs="{'readonly':[('state','!=','draft')],'required':[('has_prepaid','=',True)]}" options="{'no_create':True}"/>
+
+								</group>
+								<separator string="Installment Details"/>
+								<field name="prepaid_expenses_installment_ids" attrs="{'readonly':[('state','!=','draft')]}">
+									<tree editable="bottom" create="false">
+										<field name="name" string="Description" required="1"/>
+										<field name="date" invisible="1"/>
+										<field name="account_id" required="1" options="{'no_create':True}"/>
+										
+										<field name="to_account_id" required="1" options="{'no_create':True}"/>
+										
+										<field name="analytic_account_id" options="{'no_create':True}"/>
+
+										<field name="due_date" required="1" />
+										<field name="amount" required="1" sum="amount"/>
+										<field name="is_transfered" readonly="1"/>
+										<field name="state" invisible="1"/>
+									</tree>
+								</field>
+							</page>
+
+						</notebook>
+						<group col="4">
+							<field name="amount"/>
+							<!-- <field name="amount_in_words"/> -->
+
+							<field name="total_taxes_amount"/>
+							<!-- <field name="total_taxes_amount_in_words"/> -->
+
+							<field name="total_loan_amount" attrs="{'invisible':[('has_loan','=',False)]}"/>
+							<!-- <field name="total_loan_amount_in_words" attrs="{'invisible':[('has_loan','=',False)]}"/> -->
+						</group>
+						<group col="4">
+							<field name="net_amount"/>
+							<field name="net_amount_in_words"/>
+						</group>
+						<field name="has_loan" invisible="1"/>
+						
+						<group>
+							<field name="name" required="1"/>
+						</group>
+
+						
+					</sheet>
+					<div class="oe_chatter">
+						<field name="message_follower_ids" widget="mail_followers"/>
+						<field name="activity_ids" widget="mail_activity"/>
+						<field name="message_ids" widget="mail_thread"/>
+					</div>
+				</form>
+			</field>
+		</record>
+
+		<record id="ratification_search_view" model="ir.ui.view">
+			<field name="name">Ratification Search</field>
+			<field name="model">ratification.ratification</field>
+			<field name="arch" type="xml">
+				<search>
+					
+					<field name="name"/>
+					<field name="partner_id"/>
+					<field name="ref"/>
+
+					<group expand="1" string="Group By">
+					
+						<filter string="Date" name="duemonth" context="{'group_by':'date:month'}"/>
+
+						<filter name="group_by_payee" string="Payee" context="{'group_by':'partner_id'}"/>
+
+						<filter name="group_by_branch" string="Branch" context="{'group_by':'state_id'}"/>
+
+						<filter name="group_by_payment_type" string="Payment Type" context="{'group_by':'payment_type'}"/>
+
+						<filter name="group_by_ratification_type" string="Ratification Type" context="{'group_by':'ratification_type'}"/>
+
+					</group>
+				</search>
+			</field>
+		</record>
+
+		<record id="action_ratification" model="ir.actions.act_window">
+			<field name="name">Ratifications</field>
+			<field name="res_model">ratification.ratification</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+
+		<menuitem id="ratification_main_menu" name="Ratifications" parent="account_accountant.menu_accounting" sequence="-8"/>
+		
+		<menuitem id="ratification_menu" name="Ratifications" parent="ratification_main_menu" sequence="1" action="action_ratification"/>
+
+		<record id="action_partners" model="ir.actions.act_window">
+			<field name="name">Partners</field>
+			<field name="res_model">res.partner</field>
+			<field name="view_mode">kanban,tree,form</field>
+		</record>
+
+		<menuitem id="partners_menu" parent="ratification_main_menu" action="action_partners" sequence="100"/>
+
+
+
+
+
+
+
+		
+
+
+	</data>
+</odoo>

@@ -1,0 +1,48 @@
+<odoo>
+	<data>
+
+		<record id="ratification_sequence" model="ir.sequence">
+			<field name="name">Ratification Sequence</field>
+			<field name="code">ratification.sequence</field>
+			<field name="prefix">%(year)s-%(month)s-%(day)s-</field>
+			<field eval="1" name="number_next"/>
+			<field eval="1" name="number_increment"/>
+			<field eval="True" name="use_date_range"/>
+			<field name="padding">4</field>
+		</record>
+
+		<record id="ratification_list_sequence" model="ir.sequence">
+			<field name="name">Ratification List Sequence</field>
+			<field name="code">ratification.list.sequence</field>
+			<field name="prefix">%(year)s-%(month)s-%(day)s-</field>
+			<field eval="1" name="number_next"/>
+			<field eval="1" name="number_increment"/>
+			<field eval="True" name="use_date_range"/>
+			<field name="padding">4</field>
+		</record>
+
+
+		<record id="payment_sequence" model="ir.sequence">
+			<field name="name">Payments Sequence</field>
+			<field name="code">payments.sequence</field>
+			<field name="prefix">%(year)s-%(month)s-%(day)s-</field>
+			<field eval="1" name="number_next"/>
+			<field eval="1" name="number_increment"/>
+			<field eval="True" name="use_date_range"/>
+			<field name="padding">4</field>
+		</record>
+
+
+		<record id="bank_transfer_sequence" model="ir.sequence">
+			<field name="name">Bank Transfer Sequence</field>
+			<field name="code">bank.transfer.sequence</field>
+			<field name="prefix">%(year)s-%(month)s-%(day)s-</field>
+			<field eval="1" name="number_next"/>
+			<field eval="1" name="number_increment"/>
+			<field eval="True" name="use_date_range"/>
+			<field name="padding">4</field>
+		</record>
+
+
+	</data>
+</odoo>

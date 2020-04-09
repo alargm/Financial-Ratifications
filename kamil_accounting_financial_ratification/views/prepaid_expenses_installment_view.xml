@@ -1,0 +1,115 @@
+<odoo>
+	<data>
+			
+
+		<record id="prepaid_expesnes_installments_tree_view" model="ir.ui.view">
+			<field name="name">Prepaid Expenses Installment Tree</field>
+			<field name="model">ratification.prepaid.expenses</field>
+			<field name="arch" type="xml">
+				<tree create="false" edit="false">
+					<field name="partner_id"/>
+					<field name="name"/>
+					<field name="date"/>
+					<field name="account_id"/>
+					<field name="to_account_id"/>
+					<field name="due_date"/>
+					<field name="amount"/>
+					<field name="state" invisible="1"/>
+					<field name="state_id"/>
+				</tree>
+			</field>
+		</record>
+		
+		<record id="prepaid_expenses_installments_form_view" model="ir.ui.view">
+			<field name="name">Prepaid Expenses Installment Form</field>
+			<field name="model">ratification.prepaid.expenses</field>
+			<field name="arch" type="xml">
+				<form create="false">
+					<header>
+						<button name="do_transfer" string="Do Transfer" type="object" class="oe_highlight" attrs="{'invisible':[('state_id','not in',['not_transfered','canceled'])]}"/>
+						
+						<button name="do_cancel_transfer" string="Cancel" type="object" attrs="{'invisible':[('state_id','!=','transfered')]}" />
+
+						<field name="state_id"  widget="statusbar"/>
+
+					</header>
+					<sheet>
+
+						<div class="oe_button_box" name="button_box">
+							<button class="oe_stat_button" type="object" name="show_prepaid_expenses_move" icon="fa-bars" attrs="{'invisible':[('state_id','!=','transfered')]}">
+								Prepaid Expenses Move 
+							</button>		                
+						</div>
+
+						<div class="float-right">
+							<h2>
+								<label for="partner_id" class="float-right"/><br/>
+								<field name="partner_id"  class="float-right" readonly="1"/>
+							</h2>
+						</div>
+
+						<group col="4">
+							<field name="name" readonly="1"/>
+							<field name="ratification_id" readonly="1"/>
+							<field name="account_id" readonly="1"/>
+							<field name="date" readonly="1" />
+							<field name="amount" readonly="1"/>
+							<field name="due_date" readonly="1"/>
+						</group>
+						<group col="4">
+							<field name="to_account_id" required="1" options="{'no_create':True}" domain="[('is_group','=','sub_account')]"/>
+							<field name="analytic_account_id" options="{'no_create':True}"/>
+							<field name="journal_id" required="1" options="{'no_create':True}" domain="[('type','in',['cash','bank'])]"/>
+						
+							<field name="transfer_date" required="1"/>
+							<field name="is_transfered" invisible="1"/>
+						</group>
+					</sheet>
+					<div class="oe_chatter">
+						<field name="message_follower_ids" widget="mail_followers"/>
+						<field name="activity_ids" widget="mail_activity"/>
+						<field name="message_ids" widget="mail_thread"/>
+					</div>
+				</form>
+			</field>
+		</record>
+
+		<record id="prepaid_expenses_installment_search_view" model="ir.ui.view">
+			<field name="name">Prepaid Expenses Installment Search view</field>
+			<field name="model">ratification.prepaid.expenses</field>
+			<field name="arch" type="xml">
+				<search>
+					
+					<field name="name"/>
+					<field name="partner_id"/>
+					<field name="date"/>
+					<field name="due_date"/>
+					<field name="account_id"/>
+					<field name="to_account_id"/>
+					<field name="amount"/>
+					
+					<group expand="1" string="Group By">
+					
+						<filter string="Date" name="duemonth" context="{'group_by':'date:month'}"/>
+
+						<filter name="group_by_ratification" string="Ratification" context="{'group_by':'ratification_id'}"/>
+
+					</group>
+				</search>
+			</field>
+		</record>
+
+		<record id="action_prepaid_expenses_installments" model="ir.actions.act_window">
+			<field name="name">Prepaid Expenses Installments</field>
+			<field name="res_model">ratification.prepaid.expenses</field>
+			<field name="view_mode">tree,form</field>
+			<field name="domain">[('state','not in', ['draft','executed','canceled'])]</field>
+			<field name="context">{'group_by' : 'ratification_id'}</field>
+		</record>
+
+		<menuitem id="prepaid_expenses_installments_menu" name="Prepaid Expenses Installments" parent="ratification_main_menu" sequence="4" action="action_prepaid_expenses_installments"/>
+
+	</data>
+</odoo>
+
+

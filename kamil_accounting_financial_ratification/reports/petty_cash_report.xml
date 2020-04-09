@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+
+	<report 
+		id="petty_cash_report"
+		model="ratification.payment"
+		string="Petty Cash Receipt"
+		report_type="qweb-html"
+		name="kamil_accounting_financial_ratification.report_petty_cash_template"
+	/>
+
+	<template id="report_petty_cash_template">
+		<t t-call="web.html_container">
+			<t t-foreach="docs" t-as="o">
+				<t t-call="web.external_layout">
+					<div class="page">
+						<div>
+							<h3 style="font-family:Calibri;" class="text-center">
+								<b>
+									<u>
+										إقرار إستلام عهدة
+									</u>
+								</b>
+							</h3>
+							<br/>
+						</div>
+
+						<table class="text-right table table-condensed table-hover">
+							<tr>
+								<td>
+									<strong style="float:right"> الاسم </strong>
+									<span style="float:right;margin-right:20px" t-esc="o.partner_id.name"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong style="float:right">  الإدارة </strong>
+									<span style="float:right;margin-right:20px" t-esc="o.partner_id.department_id.name"></span>
+								</td>
+							</tr>
+						</table>
+
+						<p class="text-right">
+							<strong style="float:right">  
+								اُقر بانني قد استلمت مبلغ وقدره <t t-esc="'{0:,.2f}'.format(float(o.net_amount))"/> جنيه ( 
+								<t t-esc="o.net_amount_in_words"/> )
+							</strong>
+						</p>
+	
+						<br/>
+						<br/>
+
+						<p class="text-right">
+							<strong style="float:right">  
+								عبارة عن
+							</strong>
+						</p>
+						<h4 style="font-family:Calibri;" class="text-center">
+							<b>
+								<t t-esc="o.ratification_id.name"/> 
+							</b>
+						</h4>
+						<br/>
+
+						<table class="text-right table table-condensed table-hover">
+							<tr>
+								<td>
+									<strong style="float:right"> مستخرج بشيك او اذن رقم </strong> 
+									<span style="float:right;margin-right:20px" t-esc="o.check_number"></span>
+								</td>
+								<td>
+									<strong style="float:right"> بتاريخ  </strong> 
+									<span style="float:right;margin-right:20px" t-esc="o.date"></span>
+								</td>
+							</tr>
+						</table>
+								
+						<br/>
+
+
+						<p class="text-right">
+							<strong style="float:right">  
+								على ان تتم التصفية بعد تنفيذ الغرض منها في مدة لا تتجاوز شهر من تاريخ الاستلام
+							</strong>
+						</p>
+
+						<table class="text-right table table-condensed table-hover">
+							<tr>
+								<td>
+									<strong style="float:right"> توقيع المستلم </strong>
+									<span style="float:right;margin-right:20px">.........................................</span>
+								</td>
+								<td>
+									<strong style="float:right"> التاريخ </strong>
+									<span style="float:right;margin-right:20px">.........................................</span>
+								</td>
+							</tr>
+						</table>
+						<br/>
+
+						<br/>
+						
+						<table class="text-right table table-condensed table-hover">
+							<tr>
+								<td>
+									إعداد
+								</td>
+								<td>
+									<t t-esc="o.create_uid.name"/>
+								</td>
+								<td></td>
+								<td>
+									<!-- <t t-esc="o.create_date"/> -->
+									<span t-esc="context_timestamp(datetime.datetime.now()).strftime(' %H:%M   %d-%m-%Y')"/>   
+								</td>
+							</tr>
+							<tr>
+								<td> اعتماد </td>
+								<td>................................................................................</td>
+								<td> مراجعة </td>
+								<td>................................................................................</td>
+							</tr>
+						</table>
+						
+
+
+					</div>
+				</t>
+			</t>
+		</t>
+	</template>
+
+</odoo>

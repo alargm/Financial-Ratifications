@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+
+	<report 
+		id="one_percent_tax_report"
+		model="ratification.payment"
+		string="One Percent Report"
+		report_type="qweb-html"
+		name="kamil_accounting_financial_ratification.report_one_percent_template"
+	/>
+
+	<template id="report_one_percent_template">
+		<t t-call="web.html_container">
+			<t t-foreach="docs" t-as="o">
+				<t t-call="web.external_layout">
+					<div class="page">
+						
+						<p class="text-right">
+							<strong style="float:right"> التاريخ </strong>
+							<span style="float:right;margin-right:20px" t-esc="o.date"></span>
+						</p>
+						<br/>
+						<p class="text-right">
+							<strong style="float:right"> السادة/ </strong>
+							<span style="float:right;margin-right:20px" t-esc="o.partner_id.name"></span>
+						</p>
+						
+						<br/>
+						<p class="text-center">
+							السلام عليكم ورحمة الله 
+						</p>
+
+						<br/>
+						<br/>
+
+						<p class="text-center">
+							<strong class="text-center">
+								<u>
+									الموضوع/ضريبة الـ1%
+								</u>
+							</strong>
+						</p>
+
+						<t t-foreach="o.tax_line_ids" t-as="line">
+							<t t-if="line.tax_id.amount_type == 'percent' and line.tax_id.amount == 1 ">
+
+								<strong style="float:right">
+									اشارة للموضوع اعلاه افيدكم بانه تم خصم مبلغ <t t-esc="'{0:,.2f}'.format(float(line.amount))"/> جنيه  من قيمة <t t-esc="'{0:,.2f}'.format(float(o.amount))"/>  بالشيك رقم ( <t t-esc="o.check_number"/> ) بتاريخ <t t-esc="o.date"/> عبارة عن ضريبة الـ1%، حسب منشور وزارة المالية والاقتصاد الوطني
+								</strong>
+							</t>
+						</t>
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+						<p class="text-center">
+							والله الموفق
+						</p>
+
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+
+						<div style="float:left">
+							<p class="text-left">
+								<strong style="float:right"> المدير المالي </strong>
+							</p>
+						</div>
+
+					</div>
+				</t>
+			</t>
+		</t>
+	</template>
+
+</odoo>
+
+						

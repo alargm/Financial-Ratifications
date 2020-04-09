@@ -1,0 +1,103 @@
+<odoo>
+	<data>
+			
+		<record id="tags_analysis_tree_view" model="ir.ui.view">
+			<field name="name">Tags Analysis Tree</field>
+			<field name="model">ratification.line.tag</field>
+			<field name="arch" type="xml">
+				<tree create="false" edit="false">
+					<field name="tag_id"/>
+					<field name="cost_center_id"/>
+					<field name="amount"/>
+					<field name="partner_id"/>
+					<field name="analytic_account_id"/>
+					<field name="account_id"/>
+					<field name="name"/>
+				</tree>
+			</field>
+		</record>
+
+
+
+			
+		<record id="tags_analysis_pivot_view" model="ir.ui.view">
+			<field name="name">Tags Analysis</field>
+			<field name="model">ratification.line.tag</field>
+			<field name="arch" type="xml">
+				<pivot string="Tags Analysis" disable_linking="True">
+
+					<field name="tag_id" type="row"/>
+					<field name="amount" type="measure"/>
+			
+				</pivot>
+			</field>
+		</record>
+
+
+		<record id="tags_analysis_searche_view" model="ir.ui.view">
+			<field name="name">Tags Analysis Search</field>
+			<field name="model">ratification.line.tag</field>
+			<field name="arch" type="xml">
+				<search>
+					
+					<field name="tag_id"/>
+					<field name="partner_id"/>
+					<field name="name"/>
+					<field name="analytic_account_id"/>
+					<field name="level_id"/>
+					<field name="account_id"/>
+					<field name="cost_center_id"/>
+					<field name="ratification_id"/>
+					<field name="the_type"/>
+					<field name="accounts_receivable_types"/>
+					<field name="accounts_payable_types"/>
+					<field name="date"/>
+					<field name="amount"/>
+					<field name="line_amount"/>
+
+					<group expand="1" string="Group By">
+						<filter name="group_by_tag_id" string="Tag" context="{'group_by':'tag_id'}"/>
+						<filter name="group_by_partner_id" string="The Partner" context="{'group_by':'partner_id'}"/>
+						<filter name="group_by_analytic_account_id" string="Budget Item" context="{'group_by':'analytic_account_id'}"/>
+						<filter name="group_by_account_id" string="Financial Account" context="{'group_by':'account_id'}"/>
+						<filter name="group_by_cost_center_id" string="Cost Center" context="{'group_by':'cost_center_id'}"/>
+						<filter name="group_by_ratification_id" string="Ratification" context="{'group_by':'ratification_id'}"/>
+						<filter name="group_by_the_type" string="Ratification Type" context="{'group_by':'the_type'}"/>
+						<filter name="group_by_accounts_receivable_types" string="Accounts Receivable Sub Group" context="{'group_by':'accounts_receivable_types'}"/>
+						<filter name="group_by_accounts_payable_types" string="Accounts Payable Sub Group" context="{'group_by':'accounts_payable_types'}"/>
+						
+						<filter name="group_by_level" string="Level" context="{'group_by':'level_id'}"/>
+						
+						<filter string="Date" name="duemonth" context="{'group_by':'date:month'}"/>
+					</group>
+				</search>
+			</field>
+		</record>
+
+
+		<record id="tags_analysis_graph_view" model="ir.ui.view">
+			<field name="name">Tags Analysis Graph</field>
+			<field name="model">ratification.line.tag</field>
+			<field name="arch" type="xml">
+				<graph>
+					<field name="tag_id" type="row"/>
+					<field name="amount"  type="measure"/>
+
+					<!-- <field name="theoritical_amount"  type="measure" string="Theoritical amount"/>
+					<field name="practical_amount" type="measure" string="Practical amount"/> -->
+				</graph>
+			</field>
+		</record>
+
+
+		<record id="action_tags_analysis" model="ir.actions.act_window">
+			<field name="name">Tags Analysis</field>
+			<field name="res_model">ratification.line.tag</field>
+			<field name="view_mode">tree,graph,pivot</field>
+			<field name="domain">[('state','not in',['draft','executed','canceled'])]</field>
+		</record>
+
+		<menuitem id="tags_analysis_menu" parent="ratification_main_menu" action="action_tags_analysis" sequence="200"/>
+
+	</data>
+</odoo>

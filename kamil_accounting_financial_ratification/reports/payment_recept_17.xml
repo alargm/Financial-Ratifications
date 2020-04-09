@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+
+	<report 
+		id="payment_receipt_17_report"
+		model="ratification.payment"
+		string="Payment Receipt 17"
+		report_type="qweb-html"
+		name="kamil_accounting_financial_ratification.report_payment_receipt_17_template"
+	/>
+
+	<template id="report_payment_receipt_17_template">
+		<t t-call="web.html_container">
+			<t t-foreach="docs" t-as="o">
+				<t t-call="web.external_layout">
+					<div class="page">
+						<br/><br/><br/>
+
+						<div>
+							<div style="font-family:Calibri;" class="text-center">
+
+								<t t-if="o.payment_type == 'cash'">
+									<b style="font-size:25px;">
+										نموذج إذن صرف خزنة 
+									</b>
+								</t>
+
+								<t t-if="o.payment_type != 'cash'">
+									<span  style="font-size:25px;">
+										نموذج إذن صرف (17)
+									</span>
+								</t>
+
+							</div>
+							<br/>
+							
+							<!-- <p class="text-right">
+								<strong style="float:right">التاريخ </strong>
+								<span style="float:right;margin-right:20px" t-esc="o.date"></span>
+							</p> -->
+
+
+						</div>
+
+						<table border="1" class="text-right table table-bordered">
+							<tr>
+								<td>
+									<strong style="float:right"> تاريخ الدفعية </strong>
+									<span style="float:right;margin-right:20px" t-esc="o.date"></span>
+								</td>
+								<td>
+									<strong style="float:right"> رقم الدفعية </strong>
+									<span style="float:right;margin-right:20px" t-esc="o.code"></span>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<strong style="float:right"> المدفوع له </strong>
+									<span style="float:right;margin-right:20px" t-esc="o.partner_id.name"></span>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="text-center">
+										<strong>
+											<t t-if="o.payment_type == 'cash'">
+												تدفع نقداً
+												<br/>
+												<t t-esc="o.journal_id.name"/>
+												-
+												رقم الإذن 
+												-
+												<t t-esc="o.check_number"/>
+											</t>
+											<t t-if="o.payment_type == 'Cheque'">
+												تدفع بشيك				
+												<br/>
+												<t t-esc="o.journal_id.name"/>
+												-
+												رقم الشيك - 
+												<t t-esc="o.check_number"/>
+											</t>
+
+											<t t-if="o.payment_type == 'bank_transfer'">
+												تحول بنكياً
+												<br/>
+												<t t-esc="o.journal_id.name"/>
+												-
+												رقم التحويل -
+												<t t-esc="o.check_number"/>
+											</t>
+
+											<t t-if="o.payment_type == 'counter_cheque'">
+												تدفع بشيك مصرفي
+												<br/>
+												<t t-esc="o.journal_id.name"/>
+												-
+												رقم الشيك - 
+												<t t-esc="o.check_number"/>
+											</t>
+											<!-- 
+											<br/>
+
+											<t t-esc="o.journal_id.name"/>
+											-
+
+											<t t-if="o.check_number">
+												رقم الشيك /اﻹذن <t t-esc="o.check_number"/>
+											</t> -->
+										</strong>
+									</div>
+								</td>
+							</tr>
+						</table>
+
+						<br/>
+						<strong style="float:right">
+							<b>
+								بهذا فقد تصدق بمبلغ  <t t-esc="'{0:,.2f}'.format(float(o.amount))"/>
+							</b>
+						</strong>
+						<br/>
+
+						<t t-if="o.report_line_ids">
+
+							<table border="1" class="text-right table table-bordered" dir="rtl">
+								<tbody>
+									<tr class="table-active">
+										<td> م. </td>
+										<td> الحساب </td>
+										<td> مدين </td>
+										<td> دائن </td>
+									</tr>
+
+									<t t-set="counter" t-value="1"/>
+
+									<t t-set="total_debit" t-value="0"/>
+									<t t-set="total_credit" t-value="0"/>
+									
+									<t t-foreach="o.report_line_ids" t-as="line">
+										<tr>
+											<td>
+												<t t-esc="counter"/>
+												<t t-set="counter" t-value="counter + 1"/>
+											</td>
+
+											<td>
+												<t t-esc="line.account_id.name"/>
+											</td>
+
+											<td><t t-esc="'{0:,.2f}'.format(float(line.debit_amount))"/></td>
+
+											<td><t t-esc="'{0:,.2f}'.format(float(line.credit_amount))"/></td>
+
+											<t t-set="total_debit" t-value="total_debit + line.debit_amount "/>
+
+											<t t-set="total_credit" t-value="total_credit + line.credit_amount "/>
+										</tr>
+									</t>
+									<tr class="table-active">
+										<td colspan="2">
+											الإجمالي
+										</td>
+										<td>
+											<t t-esc="'{0:,.2f}'.format(float(total_debit))"/>
+										</td>
+										<td>
+											<t t-esc="'{0:,.2f}'.format(float(total_credit))"/>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</t>
+
+<!-- 
+						<t t-if="o.payment_move_id">
+
+							<table border="1" class="text-right table table-bordered">
+								<thead>
+									<th> الحساب </th>
+									<th> مدين </th>
+									<th> دائن </th>
+									<th> بيان </th>
+								</thead>
+								<tbody>
+									<t t-foreach="o.payment_move_id.line_ids" t-as="line">
+										<tr>
+											<td><t t-esc="line.account_id.name"/></td>
+											<td><t t-esc="'{0:,.2f}'.format(float(line.debit))"/></td>
+											<td><t t-esc="'{0:,.2f}'.format(float(line.credit))"/></td>
+											<td><t t-esc="line.name"/></td>
+										</tr>
+									</t>
+								</tbody>
+							</table>
+						</t> -->
+
+						<br/>
+
+						<br/>
+
+
+						<table border="0" class="text-right table borderless">
+							<tr>
+							
+								<td>
+									<span style="float:right;margin-right:20px" t-esc="o.net_amount_in_words"></span>
+								</td>
+
+								<td>
+									<strong style="float:right"> 		
+										
+										<span style="float:right;margin-right:20px" t-esc="'{0:,.2f}'.format(float(o.net_amount))"></span>
+										المبلغ المستحق الدفع 
+
+									</strong>
+								</td>
+
+							</tr>
+						</table>							
+						<br/>
+
+
+						<b>
+							<p class="text-right">
+								<strong style="float:right"> عبارة عن: </strong>
+								<span style="float:right;margin-right:20px" t-esc="o.name"></span>				
+							</p>
+						</b>
+
+						<br/><br/>
+
+						<table border="0" class="text-right table borderless">
+							<tr>
+
+								<td>
+									<span t-esc="context_timestamp(datetime.datetime.now()).strftime(' %H:%M   %d-%m-%Y')"/>   
+								</td>
+
+								<td>
+									<strong style="float:right">إعداد </strong>
+									<span style="float:right;margin-right:20px" t-esc="o.create_uid.name"></span>
+								</td>
+								
+							</tr>
+						
+							<tr>
+
+								<td>
+									<strong style="float:right"> توقيع ثاني </strong>
+									<span style="float:right;margin-right:20px">
+										................................................................................
+									</span>
+								</td>
+
+								<td>
+									<strong style="float:right"> توقيع اول </strong>
+									<span style="float:right;margin-right:20px">
+										................................................................................
+									</span>
+								</td>
+								
+							</tr>
+						</table>
+
+						<table border="0" class="text-right table borderless">
+							<tr>
+								<td>
+									<strong style="float:right"> رقم البطاقة </strong>
+									<span style="float:right;margin-right:20px">
+										................................................................................
+									</span>
+								</td>
+
+								<td>
+									<strong style="float:right"> المستلم </strong>
+									<span style="float:right;margin-right:20px">
+										................................................................................
+									</span>
+								</td>
+								
+							</tr>
+						</table>
+
+
+
+					</div>
+				</t>
+
+
+			</t>
+		</t>
+	</template>
+
+</odoo>

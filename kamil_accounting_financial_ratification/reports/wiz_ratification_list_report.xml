@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+	
+	<!-- Payment Report-->
+	<report 
+		id="ratification_list_report"
+		model="wizard.ratification.list"
+		string="Ratification List Report"
+		report_type="qweb-html"
+		name="kamil_accounting_financial_ratification.list_template"
+	/>
+
+	<template id="list_template">
+		
+		<div class="page">
+		<t t-call="web.external_layout">
+			<t t-call="web.html_container">
+
+
+				<br/><br/><br/>
+		  		<div>
+					<h3 style="font-family:Calibri;" class="text-center">
+						<b>المسير</b>
+					</h3>				
+				</div>
+
+				<br/>
+				<t t-if="payment_number and cheque_number and payment_date ">
+					<p class="text-right">
+						<strong style="float:right">
+						قائمة بأسماء المدفوع لهم بالمستند رقم ( <t t-esc="payment_number"/> ) بالشيك رقم <t t-esc="cheque_number"/> بتاريخ <t t-esc="payment_date"/> 
+						</strong>
+					</p>
+				</t>
+				<br/>
+
+
+				<p class="text-right">
+					<strong style="float:right">
+					عبارة عن : 
+					</strong>
+
+					<strong style="float:right">
+					<t t-esc="description"/>
+					</strong>
+				</p>
+				<br/>
+
+		  
+			   <table dir="rtl" border="1" style="font-size: 10px;" class="text-right table table-condensed table-bordered">
+                    <tbody>
+                    	<tr class="table-active">
+                	
+                    		<td style="font-size: 10px;">
+                    			<b class="text-right"> الرقم </b>
+                    		</td>
+                    		<td colspan="2" style="font-size: 10px;">
+                    			<b class="text-right"> الجهة </b>
+                    		</td>
+                    		<td colspan="2"  style="font-size: 10px;">
+                    			<b class="text-right">
+                    				المبلغ
+                    			</b>
+                    		</td>
+                    		
+                    		<t t-if="list_type == 'ratification_list_with_items' ">
+                    			<td style="font-size: 10px;" >
+                    				<b class="text-right">
+                    					البند
+                    				</b>
+                    			</td>
+                    		</t>
+                    		
+                    		<td  style="font-size: 10px;" colspan="2">
+                    			<b class="text-right">
+                    				قيمة الخصم
+                    			</b>
+                    		</td>
+                    		<td  style="font-size: 10px;" colspan="2">
+                    			<b class="text-right">
+                    				القيمة الصافية
+                    			</b>
+                    		</td>
+
+                    		<t t-if="for_bank_or_cash == 'bank'">
+                        		<td  style="font-size: 10px;" colspan="2" ><b class="text-right">إسم البنك</b></td>
+                        		<td style="font-size: 10px;" colspan="2" ><b class="text-right">إسم الفرع</b></td>
+                        		<td style="font-size: 10px;" colspan="2" ><b class="text-right">رقم حساب البنك</b></td>
+                        	</t>
+
+                        	<t t-if="for_bank_or_cash == 'cash'">
+                    			<td  class="text-right" style="font-size: 10px;" colspan="2"><b>التوقيع</b></td>
+                    		</t>
+
+                    	</tr>
+                   
+                    
+                   
+                    	<!-- <div class="page"> -->
+                    	<t t-foreach="docs" t-as="doc">
+                        	<tr class="text-right">
+                        		<td>
+									<t class="text-right" t-esc="doc_index + 1"/>
+								</td>
+                        		<td colspan="2">
+                                    <t  class="text-right" style="font-size: 10px;"  t-esc="doc['partner_name']"/>
+                                </td>
+                                
+                                <td class="text-right" colspan="2">
+                                    <t  class="text-right" style="font-size: 10px;"  t-esc="'{0:,.2f}'.format(float(doc['amount']))"/>
+                                </td>
+
+                                 <t t-if="list_type == 'ratification_list_with_items' ">
+	                                <td class="text-right">
+	                                    <t  style="font-size: 10px;"  t-esc="doc['account_name']" class="text-right"/>
+	                                </td>
+	                            </t>
+
+
+                                <td colspan="2" class="text-right">
+                                	<t  style="font-size: 10px;"  t-esc="'{0:,.2f}'.format(float(doc['deduction_amount']))" class="text-right"/>
+                                </td>
+                                <td colspan="2" class="text-right">
+                                    <t  class="text-right" style="font-size: 10px;"  t-esc="'{0:,.2f}'.format(float(doc['net_amount']))"/>
+                                </td>
+                               
+
+                                <t t-if="for_bank_or_cash == 'bank'">
+
+	                                <td  class="text-right" colspan="2">
+	                                    <t  style="font-size: 10px;"  t-esc="doc['bank_name']" class="text-right"/>
+	                                </td>
+
+	                               
+	                                <td  class="text-right" colspan="2">
+	                                    <t  style="font-size: 10px;"   t-esc="doc['bank_branch_name']" class="text-right"/>
+	                                </td>
+
+
+	                                <td  class="text-right" colspan="2">
+	                                    <t  style="font-size: 10px;"  t-esc="doc['account_number']" class="text-right"/>
+	                                </td>
+
+	                            </t>
+	                            <t t-if="for_bank_or_cash == 'cash'">
+                                	<td colspan="2"/>
+                                </t>
+                        	</tr>
+                        </t>
+                        <tr class="table-active">
+                    		<td colspan="3"><b>اﻹجمالي</b></td>
+
+                    		<td colspan="2">
+                    			<b>
+                    				<t  style="font-size: 10px;" t-esc="'{0:,.2f}'.format(float(sum(t['amount'] for t in docs)))"/>
+                    			</b>
+                    		</td>
+                    		<t t-if="list_type == 'ratification_list_with_items' ">
+                        		<td/>
+                        	</t>
+                    		<td colspan="2">
+                    			<b>
+                    				<t  class="text-right" style="font-size: 10px;"  t-esc="'{0:,.2f}'.format(float(sum(t['deduction_amount'] for t in docs)))"/>
+                    			</b>
+                    		</td>
+                    		<td colspan="2">
+                    			<b>
+                    				<t  style="font-size: 10px;" t-esc="'{0:,.2f}'.format(float(sum(t['net_amount'] for t in docs)))" class="text-right"/>
+
+                    			</b>
+                    		</td>
+                    		<td/>
+                    		<td/>
+                    	</tr>
+                    <!-- </div> -->
+                </tbody>
+
+                </table>
+	                <p class="text-right">
+						<strong style="float:right">
+							<t t-esc="total_net_amount_in_words"/>
+						</strong>
+					</p>
+					<table class="text-right table table-condensed table-hover">
+						<tr>
+							<td>
+								إعداد
+							</td>
+							<td>
+								<t t-esc="x_create_user_id"/>
+							</td>
+							<td/>
+							<td>
+								<span t-esc="context_timestamp(datetime.datetime.now()).strftime(' %H:%M   %d-%m-%Y')"/>   
+							</td>
+						</tr>
+						<tr>
+							<td> اعتماد </td>
+							<td>................................................................................</td>
+							<td> مراجعة </td>
+							<td>................................................................................</td>
+						</tr>
+					</table>
+			</t>
+		</t>	
+	</div>
+	
+	</template>
+
+</odoo>
+
